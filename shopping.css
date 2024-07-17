@@ -154,7 +154,7 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.product-card:hover .product-buttons {
+.product-buttons {
     display: flex;
     gap: 1em;
 }

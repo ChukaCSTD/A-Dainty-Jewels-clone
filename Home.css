@@ -129,7 +129,7 @@ body{
 /* section six starts */
 .part-six{
     padding-top: 100px;
-    height: 400px;
+    height: 490px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
