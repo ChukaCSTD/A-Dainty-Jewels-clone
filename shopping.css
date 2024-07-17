@@ -127,3 +127,42 @@ body{
     font-size: 18px;
     margin: 0;
 }
+
+.btn-buy{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.btn-details{
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.product-buttons {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-card:hover .product-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.product-buttons button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
