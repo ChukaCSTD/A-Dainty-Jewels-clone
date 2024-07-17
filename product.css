@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f8f8f8; */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header.scrolled .logo img {
+    filter: invert(1);
+}
+
+header.scrolled nav a {
+    color: #fff;
+}
+
+
+/* navigation section starts here */
+.nav{
+    display: flex;
+    gap:10px;
+    width: 100%;
+    margin: auto ;
+    height: 250px;
+    border-bottom: .1px solid rgba(128, 128, 128, 0.233);
+
+}
+.nav-one{
+    display: flex;
+    flex-direction: column;
+}
+.nav-two{
+    display: flex;
+    flex-direction: column;
+}
+.nav-three{
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 80px; */
+}
+.nav-icons{
+    display: flex;
+    gap: 12px;
+    padding-top: 20px;
+    width: 50px;
+
+}
+.nav-two-text{
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    align-items: center;
+    justify-content:center ;
+    margin-top: 20px;
+}
+
+/* navigation section ends here*/
+
+
+
+
+
+main {
+    padding: 80px 20px 20px; /* Adjusted padding to account for fixed header */
+    display: flex;
+    justify-content: center;
+}
+
+.product-page {
+    display: flex;
+    gap: 20px;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-images img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    cursor: pointer;
+}
+
+.product-details {
+    max-width: 400px;
+}
+
+.product-details h1 {
+    margin: 0 0 10px;
+}
+
+.product-details .price {
+    color: #e67e22;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-details .description {
+    margin: 20px 0;
+}
+
+.add-to-cart {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="product_style.css">
+    <link rel="stylesheet" href="navigation.css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="promo">
+            <div class="promo_container">
+                <p style="text-transform: uppercase;">
+                    Everything you need for a beautiful summer! Beautiful 
+                    <a href="https://store.daintyjewells.com/catalog/category/new/summer/">summer dresses</a>
+                    and chic 
+                    <a href="https://store.daintyjewells.com/catalog/category/more/swimleisure/">swimwear.</a>
+                </p>
+            </div>
+            <a href="#"><div class="close"></div></a>
+        </div>
+        <!-- navigation section starts here -->
+        <div class="nav">
+            
+            <div class="nav-one">
+                <div class="nav_one_text dis-flex">
+                    <h4 class="navlinkleft">GIFT&nbsp;CARDS</h4>
+                    <h4 class="navlinkleft">NEED&nbsp;HELP?</h4>
+                </div>
+            </div>
+
+            <div class="nav-two">
+                <img src="images/dainty jewells logo and text.png" alt="logo"/>
+
+                <div class="nav-two-text">
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SUMMER</h4>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SWIMLEISURE</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">LAST&nbsp;CHANCE</h4>
+                        <img style="width: 17px; height: 17px; "  src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">DRESSES</h4>
+                        <img style="width: 17px; height: 17px;"  src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SKIRTS</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">TOPS</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">KIDS</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div style="display: flex; padding-top: 5px;" >
+                        <h4 style="margin: 0;" class="drop-button">WEDDING</h4>
+                        <div class="drop">
+                            <button  class="drop-button" id="spin"><img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" /></button>
+                            <!-- <button class="cart-button">Cart (<span class="cart-count">0</span>)</button> -->
+                            <div class="drop-dropdown">
+                                <div class="drop-text">
+                                    <div class="drop-textA">
+                                        <h4>WEDDING</h4>
+                                        <p>SHOP ALL</p>
+                                    </div>
+                                    <div class="drop-textB">
+                                        <div class="drop-textB-grid">
+                                            <p>Customer Favorites</p>
+                                            <p>Knee Length Dresses</p>
+                                            <p>Tea Length Dresses</p>
+                                            <p>Maxi Length Dresses</p>
+                                            <p>Maternity / Nursing Friendly</p>
+                                            <p>Plus Dresses</p>
+                                        </div>
+
+                                        <div class="drop-textB-grid">
+                                            <p>Bride</p>
+                                            <p>Bridesmaids</p>
+                                            <p>Mother of the Bride</p>
+                                            <p>Flower Girl</p>
+                                            <p>Guestbook Attendants</p>
+                                            <p>Bridesmaid Gifts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">FOUNDATION</h4>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">MORE</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="nav-three">
+
+                <div class="nav-icons">
+                    <div style="display: flex;">
+                        <img style="height: 27px;" src="images/search icon.png"/>
+                        <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
+                    </div>
+                    <div style="display: flex;">
+                        <img style="height: 27px;" src="images/profile icon.png"/>
+                        <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
+                    </div>
+                    <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
+                    <img style="height: 27px;" src="images/shopping bag.png"/>        
+                </div>
+
+            </div>
+
+        </div>
+    
+    </nav>
+
+    <!-- navigation section ends here -->
+    <div class="location">
+        Home&nbsp;&nbsp;/&nbsp;&nbsp;
+        <a href="#" class="navlinkleft" style="text-decoration: none;">Modest Wedding Attire&nbsp;&nbsp;</a>/&nbsp;&nbsp;
+        <a href="#" class="navlinkleft" style="text-decoration: none;">Modest Midi Dresses&nbsp;&nbsp;</a>/&nbsp;&nbsp;
+        <a href="product.html" class="navlinkleft" style="text-decoration: none;">Catching the Sunset Dress</a>
+    </div>
+
+    <main>
+        
+        <div class="product-page">
+            <div class="product-images">
+                <div class="thumbnail-images">
+                    <img src="images/211A5524__00645.jpg" alt="Thumbnail 1" class="thumbnail">
+                    <img src="images/211A5511__55425.jpg" alt="Thumbnail 2" class="thumbnail">
+                    <img src="images/Photo_May_04_9_35_40_AM_1__61203.jpg" alt="Thumbnail 3" class="thumbnail">
+                </div>
+                <div class="top-image">
+                    <img src="images/211A5524__00645.jpg" alt="Catching the Sunset Dress" id="main-image">
+                </div>
+            </div>
+            <div class="product-details dis-flex" style="font-size: 19px; flex-direction: column;">
+                <h1>Catching the Sunset Dress</h1>
+                <p class="price">$129.95</p>
+                <p class="description">or make 4 interest-free payments starting at $37.49 with</p>
+                <div class="dis-flex" style="gap: 10px; margin-bottom: 10px;">
+                    <img src="images/logo-afterpay-colour.png" alt="afterpay" style="height: 20px; width: 100px;">
+                    <a href="#" style="font-size: 13px; font-weight: 100; font-family: Lora, serif; color: #cb7c6f; display: flex; justify-content: center; align-items: center; ">More Info</a>
+                </div>
+                <p class="stars">
+                    <!-- <label class="myrating">0</label> -->
+                    <span>
+                      <a class="star-1" href="#">1</a>
+                      <a class="star-2" href="#">2</a>
+                      <a class="star-3" href="#">3</a>
+                      <a class="star-4" href="#">4</a>
+                      <a class="star-5" href="#">5</a>
+                    </span>
+                    <b style="font-family: Lora, serif; font-weight: 100; font-size: 13px;">&nbsp;&nbsp;(No reviews yet)&nbsp;&nbsp;|&nbsp;&nbsp;</b>
+                    <b style="color: #cb7c6f; font-weight: 100; font-family: Lora, serif; font-size: 13px;">Add Your Review</b>
+                </p>
+
+                <label for="size" id="w-size">SIZE: <p id="particular_size"></p></label>
+                <select name="size" id="diff_sizes">
+                    <option value="">Size</option>
+                    <option value="">X-Small</option>
+                    <option value="">Small</option>
+                    <option value="">Medium</option>
+                    <option value="">Large</option>
+                    <option value="">X-Large +$5</option>
+                    <option value="">2X-Large +$5</option>
+                    <option value="">3X-Large +$5</option>
+                    <option value="">4X-Large +$5</option>
+                </select>
+
+                <div class="counter dis-flex" style="flex-direction: column;">
+                    <label for="size" id="w-size">QTY:</p></label>
+                    <div class="dis-flex" style="align-items: center;">
+                        <input type="text" value="1">
+                        <div class="controls">
+                            <span class="up"><img src="images/up-arrow-lte.png" alt="" style="height: 17px; margin-left: 2px;"></span>
+                            <span class="down"><img src="images/down-arrow-lte.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shipping-info dis-flex">
+                    <img src="images/internet.png" alt="" style="height: 20px;">
+                    <p style="padding-left: 5px; align-items: center; justify-content: center; color: gray; font-family: Lora, sans-serif; font-size: 16px;">Worldwide Shipping Available</p>
+                </div>
+                
+                <button class="add-to-cart">Add to CArt</button>
+
+                <hr style="margin: 20px 0; border: none; background-color: lightgray; height: .5px;">
+
+                <div>
+                    <p style="margin: 10px 0; font-family: Lora, serif; font-weight: bolder; font-size: 15px; letter-spacing: .2em;">FIND YOUR SIZE</p>
+                    <p style="margin: 20px 0; font-family: Lora, serif; color: gray; font-size: 15px; letter-spacing: .04em;">
+                        If your measurements are between those listed in the size chart, pick the next larger size.
+                    </p>
+                    <p style="margin: 20px 0; font-family: Lora, serif; font-weight: bolder; font-size: 16px; text-decoration: underline;">Size Chart</p>
+
+                    <hr style="margin: 20px 0; border: none; background-color: lightgray; height: .5px;">
+                </div>
+
+                <div class="dis-flex" style="justify-content: space-between;">
+                    <div class="dis-flex" style="align-items: center;">
+                        <img src="images/heart.png" alt="" style="height: 18px;">
+                        <b style="color: #cb7c6f; font-weight: 100; font-family: Lora, serif; font-size: 13px; padding-left: 5px;">Add to Favorites</b>
+                        <b style="margin: -10px 0 0 0;"> </b>
+                    </div>
+                    <div class="dis-flex" style="gap: 15px; align-items: center;">
+                        <img src="images/facebook-app-symbol (1).png" alt="" style="height: 18px;">
+                        <img src="images/email.png" alt="" >
+                        <img src="images/paper.png" alt="" style="height: 18px;">
+                        <img src="images/pintrest.png" alt="">
+                        <img src="images/likes.png" alt="" style="height: 18px;">                        
+                    </div>                    
+                </div>
+                <br><br>
+                <hr style="margin: 20px 0; border: none; background-color: lightgray; height: .5px;"> 
+                
+                <div>
+                    <div class="dis-flex" style="justify-content: space-between;">
+                        <h1 style="font-size: 25px; flex-direction: column; letter-spacing: .04em;">DETAILS</h1>
+                        <div>
+                            <div class="add" style="font-size: 30px; color: #cb7c6f; font-weight: 600;">+</div>
+                            <div class="sub" style="display: none;  font-size: 30px; color: #cb7c6f; font-weight: 600;">-</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="color: gray; line-height: 1.5em;">
+                            In a word: showstopping! This dress will take your breath 
+                            away the moment you slip it on! First things first: the hot 
+                            pink color is gorgeous! It screams summer and gives 
+                            ladies of all shades a lovey, natural glow. The tassel belt is 
+                            a subtle pink and we love the contrast; it really pops 
+                            against the dress! Subtle pleats on the bodice add a touch 
+                            of texture and elegance and the tiered skirt is what dress 
+                            dreams are made of! Not only was it designed for the 
+                            perfect twirl but the eyelet detail along the hem is to die 
+                            for! It's some of the most gorgeous eyelet we've had to 
+                            date! The sleeves are breezy and comfortable with elastic 
+                            around the wrists. We worked so hard to perfect this 
+                            dress and we just know you're not going to want to take 
+                            it off once you slip it on! Get ready for a flood of 
+                            compliments wherever you go! Functional buttons.
+                        </p>
+                        <br>
+                        <p style="color: gray; font-style: italic;">97% Polyester | 3% Spandex</p>
+                        <br>
+                        <p style="color: gray; font-style: italic;">
+                            Care instructions: Cold, Delicate Machine wash. Hang Dry, 
+                            Do not tumble dry.
+                        </p>
+                        <br>
+                        <p style="margin: 10px 0; font-family: Lora, serif; font-weight: bolder; font-size: 15px; letter-spacing: .2em; color: gray;">GIFT WRAPPING:</p>
+                        <p style="color: gray;">Options available</p>
+                    </div>
+                </div>
+                <hr style="margin: 20px 0; border: none; background-color: lightgray; height: .5px;"> 
+
+            </div>
+            
+        </div>
+
+    </main>
+    <div>
+        <h1 style="text-align: center; font-size: 25px; flex-direction: column; letter-spacing: .04em;">YOU MAY ALSO LIKE</h1>
+        <hr style="width: 150px; margin: 10px 50% 20px 45%; border: none; background-color: #f9e5dd; height: 2px;"> 
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div>
+            <p></p>
+            <hr>
+
+            <p class="stars">
+                <span>
+                    <a class="star-1" href="#">1</a>
+                    <a class="star-2" href="#">2</a>
+                    <a class="star-3" href="#">3</a>
+                    <a class="star-4" href="#">4</a>
+                    <a class="star-5" href="#">5</a>
+                </span>
+            </p>
+            <p></p>
+
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- section two starts here -->
+    <div class="part-thirteen">
+        <div class="part-thirteen-A">
+            <h1>CONNECT WITH US</h1>
+            <hr class="lineC"/>
+            <div style="padding-top: 20px; padding-bottom: 25px;">
+                <p style="margin: 0;">Receive exclusive discounts and updates in your</p>
+                <p style="padding-left: 140px; margin: 0; padding-top: 4px;">inbox!</p>
+            </div>
+            <button class="btnC">
+                <div style="display: flex; gap: 20px;">
+                    <img style="width: 25px; height: 25px; padding-top: 10px; padding-left: 10px;" src="./images/email.png"/>
+                    <h3>EMAIL&nbsp;ADDRESS</h3>
+                </div>
+                <h3>SIGN&nbsp;UP</h3>
+            </button>
+        </div>
+
+        <div class="part-thirteen-B">
+            <img style="width: 45px; height: 45px; margin-bottom: 25px;" src="./images/quotation-mark.png">
+            <h3>AND WHO KNOWS BUT THAT</h3>
+            <h3>YOU HAVE COME TO YOUR</h3>
+            <h3>POSITION FOR SUCH A TIME</h3>
+            <h3>AS THIS?</h3>
+            <p>(ESTHER4:14)</p>
+        </div>
+    </div>
+    <!-- section two ends here -->
+
+    <!-- footer starts here -->
+    <footer>
+
+        <div class="footer-grid  tall">
+            <h1 style="padding-bottom: 20px;">HOW CAN WE HELP?</h1>
+
+
+            <p>We're known for our exceptional customer</p>
+            <p>service and we would be happy to help</p>
+
+            <div style="padding-top: 10px;">
+                <h2 style="margin: 0; font-size: 26px; color: grey;">(800) 663-1594</h2>
+                <h2 style="margin: 0; padding-left: 20px; color: grey;">Contact us</h2>
+            </div>
+        </div>
+
+
+        <div class="footer-gridB tall">
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                <h5 style="margin: 0; color: grey;">ABOUT</h5>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Our Foundation</li>
+                    <li> Rewards<br>Program</li>
+                    <li>Let's Collaborate!</li>
+                    <li>She's<br>International Blog</li>
+                    <li>Local Shop</li>
+                    <li>Events</li>
+                    <li>Press</li>
+                    <li>Host a Party</li>
+                    <li>Jobs</li>
+
+                </ul>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 55px;">
+                <h5 style="margin: 0; color: grey;">HELP</h5>
+                <ul>
+                    <li>customer<br>Service</li>
+                    <li>FAQs</li>
+                    <li>Shipping Policy</li>
+                    <li>Easy Returns</li>
+                    <li>Order Status</li>
+                    <li>Sizing Guide</li>
+                    <li>Contact Us</li>
+
+                </ul>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 40px;">
+                <h5 style="margin: 0; color: grey;">MORE</h5>
+                <ul>
+                    <li>Gift Cards</li>
+                    <li>Referal<br>Program</li>
+                    <li>Peony Street<br>Boutique</li>
+                    <li>Wedding<br>Packages</li>
+                    <li>Wedding Attire</li>
+                    <li>Lookbooks</li>
+                    <li>Extended Sizing</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-grid">
+            <h1>SHE'S INTENTIONAL</h1>
+            <h1 style="padding-bottom: 20px;">BLOG</h1>
+            <p>A daily dose of inspiration dedicated to</p>
+            <p>encouragimg young millenial to live</p>
+            <p>life of resolved purpose and intention.</p>
+        </div>
+
+
+        <div class="footer-gridD">
+            <img style="width: 25px; height: 25px;" src="./images/instagram.png"/>
+            <img style="width: 25px; height: 25px;" src="./images/facebook-app-symbol.png"/>
+            <img style="width: 25px; height: 25px;" src="./images/pinterest.png"/>
+            <img style="width: 35px; height: 35px;" src="./images/youtube.png"/>
+        </div>
+
+        
+    </footer>
+    <img  src="./images/footer image.jpg"/>
+    <!-- footer ends here -->
+
+    <div class="post-footer">
+
+        <span style="color: grey;">©2023 Dainty Jewells - All Right Reserved.eCommerce Website Design by efelle creative</span>
+        <span style="display: flex; gap:10px; padding-left: 540px;">
+            <p style="border-right: .10px solid grey; margin: 0; color: grey;">Privacy Policy </p>
+            <p style="border-right: .10px solid grey; margin: 0; color: grey;"> Terms of Use </p>
+            <p style="margin: 0; color: grey;">Sitemap</p>
+        </span>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>

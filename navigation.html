@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* navigation section starts here */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* gap:10px; */
+    width: 100%;
+    margin: auto ;
+    height: 216px;
+    border-bottom: .1px solid rgba(128, 128, 128, 0.233);
+
+}
+.nav-one{
+    background: url("images/leftnavpics.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+}
+.nav_one_text{
+    position: relative;
+    left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    padding-top: 23px;
+    gap: 27px;
+}
+.navlinkleft{
+    color: grey;
+    cursor: pointer;
+}
+.navlinkleft:hover{
+    color: #cb7c6f;
+    transition: cubic-bezier(.77,0,.175,1);
+}
+
+.nav-two{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0 0 0;
+    height: 145px;
+    width: 335px;
+}
+.nav-two-text{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 20px;
+    color: grey;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 14px;
+    letter-spacing: .04em;
+    line-height: 1.25;
+}
+
+.nav-three{
+    background: url("images/rightnavpics.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 215px;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+}
+.nav-icons{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 20px;
+    right: 90px;
+    letter-spacing: .2em;
+    /* padding-top: 20px; */
+}
+
+.dis-flex{
+    display: flex;
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.promo{
+    min-height: 40px;
+    padding: 8px 25px;
+    background: #f9e5dd;
+    color: #636766;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    position: relative !important;  
+}
+
+.promo_container{
+    letter-spacing: .05em;
+    line-height: 1.765;
+    list-style-position: inside;
+    text-align: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    letter-spacing: .2em;
+}
+
+.promo_container a{
+    color: #636766;
+}
+
+.close{
+    background: url("images/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    /* position: absolute;
+    right: 20px;
+    top: 10px; */
+    float: right;
+    margin-top: -20px;
+    cursor: pointer;
+}
+/* navigation section ends here*/
+
+/* dropdown stying starts here*/
+.drop {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.drop-dropdown {
+    display: none;
+    position: absolute;
+    /* right: -125px; */
+    left: -850px;
+    background-color: white;
+    height: 400px;
+    width: 1100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 15px;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.drop-image{
+    height: 350px;
+    background-image: url("images/65ea22a753e65.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+}
+.drop-text{
+    display: flex;
+    flex-direction: column;
+}
+.drop-textA{
+    display: flex;
+    gap: 20px;
+}
+.drop-textA h4{
+    margin: 0;
+    font-weight: 100;
+    font-size: 28px;
+    color: grey;
+}
+.drop-textA p{
+    padding-top: 15px;
+    margin: 0;
+    font-size: 12px;
+    color:rgba(216, 112, 147, 0.829) ;
+}
+.drop-textB{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.drop-textB-grid{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.drop-textB-grid p{
+    padding-top: 10px;
+    margin: 0;
+    font-size: 18px;
+    color: grey;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="promo">
+            <div class="promo_container">
+                <p style="text-transform: uppercase;">
+                    Everything you need for a beautiful summer! Beautiful 
+                    <a href="https://store.daintyjewells.com/catalog/category/new/summer/">summer dresses</a>
+                    and chic 
+                    <a href="https://store.daintyjewells.com/catalog/category/more/swimleisure/">swimwear.</a>
+                </p>
+            </div>
+            <a href="#"><div class="close"></div></a>
+        </div>
+        <!-- navigation section starts here -->
+        <div class="nav">
+            
+            <div class="nav-one">
+                <div class="nav_one_text dis-flex">
+                    <h4 class="navlinkleft">GIFT&nbsp;CARDS</h4>
+                    <h4 class="navlinkleft">NEED&nbsp;HELP?</h4>
+                </div>
+            </div>
+
+            <div class="nav-two">
+                <img src="images/dainty jewells logo and text.png" alt="logo"/>
+
+                <div class="nav-two-text">
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SUMMER</h4>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SWIMLEISURE</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">LAST&nbsp;CHANCE</h4>
+                        <img style="width: 17px; height: 17px; "  src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">DRESSES</h4>
+                        <img style="width: 17px; height: 17px;"  src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SKIRTS</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">TOPS</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">KIDS</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                    <div style="display: flex; padding-top: 5px;" >
+                        <h4 style="margin: 0;" class="drop-button">WEDDING</h4>
+                        <div class="drop">
+                            <button  class="drop-button" id="spin"><img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" /></button>
+                            <!-- <button class="cart-button">Cart (<span class="cart-count">0</span>)</button> -->
+                            <div class="drop-dropdown">
+                                <div class="drop-text">
+                                    <div class="drop-textA">
+                                        <h4>WEDDING</h4>
+                                        <p>SHOP ALL</p>
+                                    </div>
+                                    <div class="drop-textB">
+                                        <div class="drop-textB-grid">
+                                            <p>Customer Favorites</p>
+                                            <p>Knee Length Dresses</p>
+                                            <p>Tea Length Dresses</p>
+                                            <p>Maxi Length Dresses</p>
+                                            <p>Maternity / Nursing Friendly</p>
+                                            <p>Plus Dresses</p>
+                                        </div>
+
+                                        <div class="drop-textB-grid">
+                                            <p>Bride</p>
+                                            <p>Bridesmaids</p>
+                                            <p>Mother of the Bride</p>
+                                            <p>Flower Girl</p>
+                                            <p>Guestbook Attendants</p>
+                                            <p>Bridesmaid Gifts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">FOUNDATION</h4>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">MORE</h4>
+                        <img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" />
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="nav-three">
+
+                <div class="nav-icons">
+                    <div style="display: flex;">
+                        <img style="height: 27px;" src="images/search icon.png"/>
+                        <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
+                    </div>
+                    <div style="display: flex;">
+                        <img style="height: 27px;" src="images/profile icon.png"/>
+                        <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
+                    </div>
+                    <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
+                    <img style="height: 27px;" src="images/shopping bag.png"/>        
+                </div>
+
+            </div>
+
+        </div>
+    
+    </nav>
+
+    <!-- navigation section ends here -->
+
+    <script>
+        $(document).ready(function() {
+    // Change main image on thumbnail click
+    $('.thumbnail').click(function() {
+        var src = $(this).attr('src');
+        $('#main-image').attr('src', src);
+    });
+
+    // Change navigation style on scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $('header').addClass('scrolled');
+        } else {
+            $('header').removeClass('scrolled');
+        }
+    });
+
+    $('.drop-button').on('click', function() {
+        $('.drop-dropdown').toggle();
+    });
+
+    $('.stars a').on('click', function() {
+        $('.stars span, .stars a').removeClass('active');
+
+        $(this).addClass('active');
+        $('.stars span').addClass('active');
+        // alert($(this).text());
+        // $('.myrating').html($(this).text()); 
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* promo on navigation styling */
+.promo{
+    min-height: 40px;
+    padding: 8px 25px;
+    background: #f9e5dd;
+    color: #636766;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    position: relative !important;  
+}
+
+.promo_container{
+    letter-spacing: .05em;
+    line-height: 1.765;
+    list-style-position: inside;
+    text-align: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    letter-spacing: .2em;
+}
+
+.promo_container a{
+    color: #636766;
+}
+
+.close{
+    background: url("images/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    /* position: absolute;
+    right: 20px;
+    top: 10px; */
+    float: right;
+    margin-top: -20px;
+    cursor: pointer;
+}
+/* promo on navigation styling */
+
+/* main body styling */
+.location{
+    width: auto;
+    text-align: left;
+    margin: 30px 0 0 190px;
+    font-family: "Lora", serif;
+    font-size: 12px;
+    color: #636766;
+}
+main {
+    padding: 20px 20px 20px; 
+    display: flex;
+    justify-content: center;
+
+}
+
+.product-page {
+    display: flex;
+    gap: 80px;
+    width: 77%;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.product-images img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+.thumbnail-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-image{
+    width: 440px;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.product-details {
+    max-width: 400px;
+}
+
+.product-details h1 {
+    margin: 0 0 10px;
+    font-family: "Cormorant Garamond", serif;
+    text-transform: uppercase;
+    color: #636766;
+    font-weight: 100;
+}
+
+.product-details .price {
+    color: #636766;
+    font-family: Lora, serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-details .description {
+    margin: 20px 0 0 0;
+    font-size: .97rem;
+    letter-spacing: .04em;
+    line-height: 1.714;
+}
+
+.add-to-cart {
+    background: #dfafa7;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .28em;
+    font-weight: 600;
+    color: black;
+}
+
+.add-to-cart:hover {
+    background: #f1c4b2;
+}
+/* main body styling */
+
+/* star-rating */
+.stars{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.stars a {
+    display: inline-block;
+    padding-right: 4px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.stars a:after {
+    position: relative;
+    font-size: 18px;
+    font-family: 'FontAwesome', serif;
+    display: block;
+    content: "\f005";
+    color: rgb(223, 221, 221);
+}
+
+span {
+    font-size: 0;
+    /* trick to remove inline-element's margin */
+}
+
+.stars a:hover~a:after {
+    color: rgb(223, 221, 221) !important;
+}
+
+span.active a.active~a:after {
+    color: rgb(223, 221, 221);
+}
+
+span:hover a:after {
+    color: #e67e22 !important;
+}
+
+span.active a:after,
+.stars a.active:after {
+    color: #e67e22;
+}
+/* star rating */
+
+/* size picker */
+#w-size{
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #636766;
+    padding-left: 10px;
+    letter-spacing: .2em;
+}
+
+#diff_sizes{
+    font-family: "Lora", sans-serif;
+    font-size: 15px;
+    color: #636766;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+/* size picker */
+
+/* counter */
+.counter {
+    width: 150px;
+    margin: 20px 0;
+    justify-content: center;
+}
+.counter input {
+    width: 50px;
+    height: 40px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: .5px solid lightgray;
+    background: white;
+    color: #636766;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-info{
+    margin: 10px 0;
+}
+/* counter */
+
+/*section two starts here*/
+.part-thirteen{
+    padding-top: 50px;
+    height: 400px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    /* padding: 5px 100px; */
+    width: 90%;
+    margin: auto;
+}
+.part-thirteen-A{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    color: white;
+    background-color:#dfafa7;
+}
+.part-thirteen-A h1{
+    margin: 0;
+    font-size: 55px;
+    font-weight: 100;
+}
+.lineC{
+    height: 2px;
+    width: 25%;
+    background-color: white;
+    border: none;
+}
+.btnC{
+    background-color:#f0f0f0;
+    color: grey;
+    border: none;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    gap: 220px;
+}
+.part-thirteen-B{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.part-thirteen-B h3{
+    font-weight: 100;
+    margin: 0;
+    font-size: 30px;
+    color: grey;
+}
+.part-thirteen-B p{
+    color: grey;
+}
+/* section two ends here

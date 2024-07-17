@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.part-one{
+    display: flex;
+    gap: 20px;
+
+}
+.part-one p{
+    color: grey;
+    /* margin: 0; */
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px;
+    
+}
+.banner{
+    display: flex;
+    /* gap: 10px; */
+}
+.items{
+    width: 20%;
+    padding: 0px 10px 10px 0px;
+    /* background-color: red; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  */
+
+
+}
+.right{
+    width: 78%;
+    padding: 0px 20px 0px 20px;
+    /* background-color: aqua; */
+
+}
+.items ul li{
+    list-style: none;
+    text-align: center;
+}
+.items li{
+    border-bottom: .5px solid #DDD;
+    padding: 20px 30px 20px 0px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+.items li:hover{
+    background-color: white;
+    color: rgba(240, 128, 128, 0.596);
+    transition: .8s all;
+}
+
+/* right section one starts here*/
+.right-one{
+    height: 300px;
+    background-image: url(./images/shop\ first\ image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* right section one ends here*/
+
+/* right section two starts here*/
+.right-two{
+    align-items: center;
+    display: flex;
+    gap: 205px;
+    height: 100px;
+}
+.right-twoA{
+    display: flex;
+    gap: 15px;
+}
+.right-twoA h4{
+    margin: 0;
+    font-size: 35px;
+    font-weight: lighter;
+    color: grey;
+}
+.p1{
+    font-size: 15px;
+    /* margin: 0; */
+    color: rgba(240, 128, 128, 0.596);
+}
+.p2{
+    font-size: 18px;
+    margin: 0;
+    color: rgba(240, 128, 128, 0.596);
+    padding-top: 10px;
+
+}
+.btn-one{
+    align-items: center;
+    display: flex;
+    gap: 90px;
+    width: 25%;
+    background-color: white;
+    border: .5px solid gray;
+    color: grey;
+}
+
+/* right section two ends here*/
+
+
+
+/* right section three starts here*/
+.right-three{
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+.right-three-grid{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.right-three-text p{
+    font-size: 18px;
+    margin: 0;
+}
