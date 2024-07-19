@@ -171,10 +171,10 @@ main {
     color: rgb(223, 221, 221);
 }
 
-span {
+/* span {
     font-size: 0;
-    /* trick to remove inline-element's margin */
-}
+    trick to remove inline-element's margin
+} */
 
 .stars a:hover~a:after {
     color: rgb(223, 221, 221) !important;
