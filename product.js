@@ -51,8 +51,13 @@ $(document).ready(function() {
                 input.val(value);
             }
         });
-    
-
-
     // counter
+    $('.image-container').hover(
+        function() {
+            $(this).find('.top-text, .bottom-text').fadeIn();
+        },
+        function() {
+            $(this).find('.top-text, .bottom-text').fadeOut();
+        }
+    );
 });

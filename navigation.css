@@ -102,15 +102,15 @@ footer{
     grid-template-rows: 200px 200px;
     gap: 1px;
     background-color: rgba(128, 128, 128, 0.233);
+    letter-spacing: 0.08em;
 }
 
 .footer-grid{
     background-color:#fefefe;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 50px 0;
     
 }
 .footer-grid h1{
@@ -235,70 +235,4 @@ ul li{
     margin: 0;
     font-size: 18px;
     color: grey;
-}
-
-
-/* footer starts here*/
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    gap: 1px;
-    background-color: rgba(128, 128, 128, 0.233);
-}
-
-.footer-grid{
-    background-color:#fefefe;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    
-}
-.footer-grid h1{
-    font-weight: lighter;
-    margin: 0;
-    font-size: 26px;
-    color:rgba(216, 112, 147, 0.623) ;
-}
-
-.footer-grid p{
-    margin: 0;
-    font-size: 18px;
-}
-.footer-gridB{
-    background-color:#fefefe;
-    display: flex;
-    gap: 20px;
-    padding: 30px 30px;
-
-}
-.footer-gridD{
-    background-color: #fefefe;
-    display: flex;
-    gap: 40px;
-    padding: 30px;
-}
-ul li{
-    list-style-type: none;
-    text-decoration: none;
-}
-.tall{
-    grid-row: span 2;
-}
-
-
-/* footer ends here */
-
-
-
-.post-footer{
-    height: 80px;
-    background-color: rgba(255, 182, 193, 0.356);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
 }

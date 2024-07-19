@@ -254,49 +254,70 @@ span.active a:after,
 
 /*section two starts here*/
 .part-thirteen{
-    padding-top: 50px;
     height: 400px;
     display: grid; 
     grid-template-columns: 1fr 1fr;
     /* padding: 5px 100px; */
-    width: 90%;
+    width: 98%;
     margin: auto;
 }
 .part-thirteen-A{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 10px 25px;
+    padding: 70px 30px;
     color: white;
     background-color:#dfafa7;
 }
 .part-thirteen-A h1{
     margin: 0;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 100;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: .1em;
 }
 .lineC{
+    margin-top: 10px;
     height: 2px;
     width: 25%;
     background-color: white;
     border: none;
 }
 .btnC{
-    background-color:#f0f0f0;
+    background-color:#ffffffa6;
     color: grey;
     border: none;
-    width: 95%;
+    width: 560px;
+    height: 58px;
     display: flex;
     align-items: center;
-    gap: 220px;
+    gap: 270px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
 }
+.signup{
+    background-color:#ffffff;
+    color: grey;
+    border: none;
+    width: 120px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 270px;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.15em;
+}
+
 .part-thirteen-B{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 50px;
     background-color: #f0f0f0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
 }
 .part-thirteen-B h3{
     font-weight: 100;
@@ -306,5 +327,8 @@ span.active a:after,
 }
 .part-thirteen-B p{
     color: grey;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
 }
 /* section two ends here
