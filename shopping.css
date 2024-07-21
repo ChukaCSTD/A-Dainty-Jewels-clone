@@ -141,6 +141,9 @@ body{
     font-size: 15px;
 
 }
+.btn_showmore:hover{
+    color: #dfafa7;
+}
 
 /* right section two ends here*/
 

@@ -389,21 +389,28 @@ body{
 }
 .part-twelveA{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 35px;
+    letter-spacing: 0.85em;
+    color: #636766;
 
 }
 .part-twelveA h1{
     margin: 0;
     color: grey;
-    font-size: 100px;
+    font-size: 75px;
     font-weight: 100;
+    font-family: "Cormorant Garamond", serif;
 }
 .part-twelveA h3{
-    padding-top: 40px;
+    padding-top: 15px;
     margin: 0;
     color: grey;
     font-size: 55px;
     font-weight: 100;
+    font-family: "Cormorant Garamond", serif;
+    align-items: center;
 }
 .part-twelveB{
     padding: 10px 20px;
@@ -414,8 +421,10 @@ body{
 }
 .part-twelveB p{
     font-size: 24px;
+    font-family: "Cormorant Garamond", serif;
     margin: 0;
-    color: grey;
+    color: #121313;
+    letter-spacing: 0.05em;
 }
 /*section twelve ends here */
 
