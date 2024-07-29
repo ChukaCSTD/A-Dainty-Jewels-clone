@@ -1,8 +1,11 @@
 $(document).ready(function(){
-    const endPoint ="http://ecommerce.reworkstaging.name.ng/v2";
-    let merchant = JSON.parse(localStorage.getItem("merchant dainty"))
-
+    const endPoint = "http://ecommerce.reworkstaging.name.ng/v2";
+    const merchant = JSON.parse(localStorage.getItem("merchant"));
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    // Make sure merchant_id is defined. Replace this with the correct way to get merchant_id.
+    const merchant_id = merchant ? merchant.id : ''; 
+
 
 
     $("form#RegForm").on("submit", function(event){

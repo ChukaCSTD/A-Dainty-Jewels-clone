@@ -99,6 +99,7 @@ $(document).ready(function() {
     function appendProductToView(product) {
         let productHtml = `
             <div class="product-item">
+           div
                 <h3>${product.title}</h3>
                 <p>${product.descp}</p>
                 <p>Price: ${product.currency} ${product.price}</p>
