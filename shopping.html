@@ -77,33 +77,35 @@
                     <div class="drop">
                         <button  class="drop-button" id="spin"><img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" /></button>
                         <!-- <button class="cart-button">Cart (<span class="cart-count">0</span>)</button> -->
-                        <div class="drop-dropdown">
-                            <div class="drop-text">
-                                <div class="drop-textA">
-                                    <h4>WEDDING</h4>
-                                    <p>SHOP ALL</p>
-                                </div>
-                                <div class="drop-textB">
-                                    <div class="drop-textB-grid">
-                                        <p>Customer Favorites</p>
-                                        <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
-                                        <p>Tea Length Dresses</p>
-                                        <p>Maxi Length Dresses</p>
-                                        <p>Maternity / Nursing Friendly</p>
-                                        <p>Plus Dresses</p>
+                        <div class="menu_drop">
+                            <div class="drop-dropdown">
+                                <div class="drop-text">
+                                    <div class="drop-textA">
+                                        <h4>WEDDING</h4>
+                                        <p>SHOP ALL</p>
                                     </div>
+                                    <div class="drop-textB">
+                                        <div class="drop-textB-grid">
+                                            <p>Customer Favorites</p>
+                                            <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
+                                            <p>Tea Length Dresses</p>
+                                            <p>Maxi Length Dresses</p>
+                                            <p>Maternity / Nursing Friendly</p>
+                                            <p>Plus Dresses</p>
+                                        </div>
 
-                                    <div class="drop-textB-grid">
-                                        <p>Bride</p>
-                                        <p>Bridesmaids</p>
-                                        <p>Mother of the Bride</p>
-                                        <p>Flower Girl</p>
-                                        <p>Guestbook Attendants</p>
-                                        <p>Bridesmaid Gifts</p>
+                                        <div class="drop-textB-grid">
+                                            <p>Bride</p>
+                                            <p>Bridesmaids</p>
+                                            <p>Mother of the Bride</p>
+                                            <p>Flower Girl</p>
+                                            <p>Guestbook Attendants</p>
+                                            <p>Bridesmaid Gifts</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="drop-image"></div>
                             </div>
-                            <div class="drop-image"></div>
                         </div>
                     </div>
                 </div>
@@ -126,11 +128,15 @@
                     <img style="height: 27px;" src="images/search icon.png"/>
                     <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
                 </div>
-                <div style="display: flex;">
+                <div style="display: flex;" id="dropdown_pro" class="drop">
                     <img style="height: 27px;" src="images/profile icon.png"/>
                     <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
+                    <div class="drop-dropdown" style="width: 100px; height: 100px;">
+                        <a href="Userlog.html" class="drop-item">User Log in/out</a>
+                        <a href="adminlog.html" class="drop-item">Merchant Log in</a>
+                    </div>
                 </div>
-                <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
+                <img id="likes" style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
                 <img style="height: 27px;" src="images/shopping bag.png"/>        
             </div>
 
@@ -144,7 +150,7 @@
     
     <div class="parent">
         
-        <div class="part-one">
+        <div class="breadcrumb">
             <p><a href="Home.html" class="breadcrumb_links">Home</a>&nbsp; /&nbsp; <a href="shopping.html" class="breadcrumb_links">Modest Wedding Attire</a> &nbsp; /&nbsp; <a href="shopping.html" class="breadcrumb_links">Modest Midi Dresses</a> </p>
         </div>
 
@@ -210,7 +216,7 @@
                         <li style=" border-bottom: none;"><input type="checkbox">&nbsp; Navy (2)</li>
                         <li style=" border-bottom: none;"><input type="checkbox">&nbsp; Purple (2)</li>
                         <li style=" border-bottom: none;"><input type="checkbox">&nbsp; Rust (2)</li>
-                        <li style=" border-bottom: none;"><button class="btn_showmore" style="background: white; cursor: pointer; border: none; height: 27px; width: 128px; font-size: 12px; font-family: Raleway, serif; font-weight: 600; padding: 4px 15px; letter-spacing: 0.2em;">SHOW MORE</button></li>
+                        <li style=" border-bottom: none;"><button class="btn_showmore" style="cursor: pointer; border: none; height: 27px; width: 128px; font-size: 12px; font-family: Raleway, serif; font-weight: 600; padding: 4px 15px; letter-spacing: 0.2em;">SHOW MORE</button></li>
                         <li style="border-top: .5px solid #DDD; border-bottom: none;">LENGTH</li>
                         <li style=" border-bottom: none;"><input type="checkbox">&nbsp;Knee Length (12)</li>
                         <li style=" border-bottom: none;"><input type="checkbox">&nbsp;Maxi Length (19)</li>
@@ -254,7 +260,7 @@
                     <div class="right-three-grid">
                         <div class="image-container">
                             <a href="product.html"></a><img src="images/Listing_pics_-_2024-05-30T150215.139__20117.jpg" alt=""></a>
-                            <div class="top-text"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
+                            <div class="top-text" data-product-id="123"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
                             <div class="bottom-text">QUICK VIEW</div>
                         </div>
 
@@ -267,7 +273,7 @@
                     <div class="right-three-grid">
                         <div class="image-container">
                             <a href="product.html"><img src="images/shopp second imageA.jpg" alt=""></a>
-                            <div class="top-text"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
+                            <div class="top-text" data-product-id="123"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
                             <div class="bottom-text">QUICK VIEW</div>
                         </div>
                         
@@ -284,7 +290,7 @@
                     <div class="right-three-grid">
                         <div class="image-container">
                             <a href="product.html"><img src="images/shop second imageB.JPG" alt=""></a>
-                            <div class="top-text"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
+                            <div class="top-text" data-product-id="123"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
                             <div class="bottom-text">QUICK VIEW</div>
                         </div>
                      
@@ -304,7 +310,7 @@
                     <div class="right-three-grid">
                         <div class="image-container">
                             <img src="images/shop second imageC.jpg" alt="">
-                            <div class="top-text"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
+                            <div class="top-text" data-product-id="123"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
                             <div class="bottom-text">QUICK VIEW</div>
                         </div>
 
@@ -321,7 +327,7 @@
                     <div class="right-three-grid">
                         <div class="image-container">
                             <img src="images/shop third imageA.JPG" alt="">
-                            <div class="top-text"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
+                            <div class="top-text" data-product-id="123"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
                             <div class="bottom-text">QUICK VIEW</div>
                         </div>
                         
@@ -933,9 +939,9 @@
                     <div></div>
                     <div>
                         <ul class="dis-flex" style="gap: 20px;">
-                            <li><a href="" style="text-decoration: none; text-decoration: underline; color: #dfafa7;">1</a></li>
-                            <li><a href="" style="text-decoration: none; color: gray;">2</a></li>
-                            <li><a href="" style="text-decoration: none; color: gray;">3</a></li>
+                            <li><a href="" style="font-family: Lora, serif; font-size: 15px; text-decoration: none; text-decoration: underline; color: #dfafa7;">1</a></li>
+                            <li><a href="" style="font-family: Lora, serif; font-size: 15px; text-decoration: none; color: gray;">2</a></li>
+                            <li><a href="" style="font-family: Lora, serif; font-size: 15px; text-decoration: none; color: gray;">3</a></li>
                         </ul>
                     </div>
                     <div class="dis-flex" style="gap: 5px; font-size: 15px; font-family: Lora, serif; letter-spacing: 0.2em;">

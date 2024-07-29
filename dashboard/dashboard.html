@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="display: flex;">
+        <div style="height: 100vh; position: fixed; width: 20%; border-right: .5px solid #DDD;">
+            <div style="display: flex; height: 50px; padding: 5px 0; margin-left: 20px; align-items: center;">
+                <div style="height: 40px; width: 40px; background-color: orange; border-radius: 50%;"></div>
+                <h3 style="margin: 0 0 0 10px;"> Hi, Admin</h3>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <a id="sidebar_view" class="view_products" href="#" style="display: flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; color: black; border-bottom: .5px solid #DDD; font-size: .8rem;">
+                    <img style="width: 20px;" src="./images/laptop.png" />
+                    <h3>View Products</h3>
+                </a>
+                <a id="sidebar_add" class="add_products" href="#" style="display: flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; color: black; border-bottom: .5px solid #DDD; font-size: .8rem;">
+                    <img style="width: 20px;" src="./images/contact-form.png" />
+                    <h3>Add Products</h3>
+                </a>
+                <a id="sidebar_viewusers" class="all_users" href="#" style="display: flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; color: black; border-bottom: .5px solid #DDD; font-size: .8rem;">
+                    <img style="width: 20px;" src="./images/bar-chart.png" />
+                    <h3>View Users</h3>
+                </a>
+            </div>
+        </div>
+        <div style="width: 80%; height: 100vh; position: absolute; right: 0; top: 60px;">
+            <div style="width: 80%; border-bottom: .5px solid #DDD; padding: 5px 0; height: 50px; position: fixed; top: 0; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-left: 20px;">
+                    <img style="width: 20px; height:20px;" src="./images/hamburger.png" />
+                    <input style="padding: 5px 10px; border-radius: 5px;" placeholder="search" type="text" />
+                </div>
+                <!-- <div style="display: flex;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-right: 12px; gap: 5px;">
+                        <div style="height: 40px; width: 40px; background-color: orange; border-radius: 50%;"></div>
+                        <h3 style="margin: 0;">Anne</h3>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="right-grid">
+                <!-- Product Counter -->
+                <div class="right-grid-itemA" id="product_cr">
+                    <h1 style="font-size: 1rem; margin: 0;">PRODUCTS</h1>
+                    <h1 style="font-size: 3rem; margin: 0;" id="product_number">0</h1>
+                </div>
+                <div class="right-grid-itemB" id="category">
+                    <h1 style="font-size: 1rem; margin: 0;">CATEGORY</h1>
+                    <h1 style="font-size: 3rem; margin: 0;" id="category_number">0</h1>
+                </div>
+                <div class="right-grid-itemC" id="user_list">
+                    <h1 style="font-size: 1rem; margin: 0;">USERS</h1>
+                    <h1 style="font-size: 3rem; margin: 0;" id="number_users">0</h1>
+                </div>
+                <div class="right-grid-itemD" id="liking">
+                    <h1 style="font-size: 1rem; margin: 0;">LIKES</h1>
+                    <h1 style="font-size: 3rem; margin: 0;">0</h1>
+                </div>
+
+                <div class="right-grid-itemA" id="ratings" style="background: orangered !important;">
+                    <h1 style="font-size: 1rem; margin: 0;">RATINGS</h1>
+                    <h1 style="font-size: 3rem; margin: 0; height: 60px;"></h1>
+                </div>
+            </div>
+
+            <!-- Create Product Modal -->
+            <div id="createProductModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Create Product</h2>
+                    <form id="createProductForm">
+                        <!-- Form fields for product creation -->
+                        <label for="productName">Product Name:</label>
+                        <input type="text" id="productName" name="productName" required>
+                        <br><br>
+                        <label for="productDescription">Product Description:</label>
+                        <input type="text" id="productDescription" name="productDescription" required>
+                        <br><br>
+                        <label for="productPrice">Product Price:</label>
+                        <input type="number" id="productPrice" name="productPrice" required>
+                        <br><br>
+                        <label for="productBrand">Product Brand:</label>
+                        <input type="text" id="productBrand" name="productBrand" required>
+                        <br><br>
+                        <label for="productQuantity">Product Quantity:</label>
+                        <input type="number" id="productQuantity" name="productQuantity" required>
+                        <br><br>
+                        <label for="productImage">Product Image or Image URL:</label>
+                        <input type="text" id="productImage" name="productImage" required>
+                        <br><br>
+                        <label for="minQuantity">Minimum Quantity:</label>
+                        <input type="number" id="minQuantity" name="minQuantity" required>
+                        <br><br>
+                        <label for="maxQuantity">Maximum Quantity:</label>
+                        <input type="number" id="maxQuantity" name="maxQuantity" required>
+                        <br><br>
+                        <button type="submit" id="create_a_product" style="border: none; background: lightgreen; height: 30px; width: 100px;">Create</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- Product Details Modal -->
+            <div id="viewProductsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>View Products</h2>
+                    <div id="productList"></div>
+                </div>
+            </div>
+
+            <!-- User Details Modal -->
+            <div id="viewUsersModal" class="modal">
+                <div class="modal-content" style=" max-width: 600px !important;">
+                    <span class="close">&times;</span>
+                    <h2>User Details</h2>
+                    <div id="userTableContainer"></div>
+                </div>
+            </div>
+
+            <!-- Category Modal -->
+            <div id="createCategoryModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Create Category</h2>
+                    <form id="createCategoryForm">
+                        <label for="categoryName">Category Name:</label>
+                        <input type="text" id="categoryName" name="categoryName" required>
+                        <br><br>
+                        <label for="categoryImage">Category Image URL:</label>
+                        <input type="text" id="categoryImage" name="categoryImage" required>
+                        <br><br>
+                        <button type="submit" id="create_a_category" style="border: none; background: lightgreen; height: 30px; width: 100px;">Create</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

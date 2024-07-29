@@ -1,0 +1,147 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tiny-cont{
+    height: 50px;
+    /* background-color: peachpuff; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    width: 90%;
+    font-size: small;
+}
+
+.tiny-cont a {
+    text-decoration: none;
+    /* align-items: center;
+    align-content: center; */
+    color: black;
+    margin-top: 15px;
+    font-size: small;
+}
+
+.tiny-cont a:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+.big-cont {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    width: 90%;
+    /* background-color: aqua; */
+    border-bottom: .5px solid #ddd;
+    letter-spacing: 3px;
+    font-size: 20px;
+    
+}
+
+.yellow-grid {
+    height: 700px;
+    /* background-color: palevioletred; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 90%;
+    gap: 10px;
+}
+
+.yellow-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.yellow-card h2 {
+    letter-spacing: 3px;
+}
+.group {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;                   
+    
+}
+.group h4{
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.group p {
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.inputs{
+    margin-top: 5px;
+    height: 35px;
+    width: 550px;
+    margin-left: 10px;
+    border: .4px solid #ddd;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+
+/* yellow Box */
+
+.yellow-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;  
+}
+
+/* ends */
+
+.divbtn{
+    height: 100px;
+    margin-top: 2px;
+    display: flex;
+    border-top: .5px solid rgb(212, 212, 212);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    /* background-color: rgb(9, 138, 250); */
+    
+    
+}
+
+.divbtn button { 
+    width: 200px;
+    height: 45px;
+    color: grey;
+    background-color: pink;
+    letter-spacing: 2px;
+    outline: none;
+    font-weight: 600;
+    border: none;
+    transition: .3s ease;
+}
+
+.divbtn button:hover {
+    background-color: rgb(253, 220, 225);
+    cursor: pointer;
+}
+
+.error-message{
+    color: red;
+    display: none;
+    margin: 0;
+    font-size: 12px;
+    margin-top: -4px;
+    /* position: absolute;
+    bottom: -15px; */
+}

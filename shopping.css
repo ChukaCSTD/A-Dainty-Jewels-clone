@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.part-one{
+.breadcrumb{
     display: flex;
     gap: 20px;
     width: 100%;
@@ -141,8 +141,13 @@ body{
     font-size: 15px;
 
 }
+.btn_showmore{
+    border: none;
+    background: white;
+    transition: 0.5s all;
+}
 .btn_showmore:hover{
-    color: #dfafa7;
+    background: #dfafa7;
 }
 
 /* right section two ends here*/

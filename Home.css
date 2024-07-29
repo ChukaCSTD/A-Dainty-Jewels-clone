@@ -18,19 +18,24 @@ body{
 
 /*section two starts here */
 .part-two{
-    height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 635px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
     gap: 30px;
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
 }
 .part-twoA{
-    height: 600px;
+    height: 635px;
+    width: 623px;
     background-image: url(./images/second\ imageA.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: contain;
-    margin-left: 25px;
+    background-size: cover;
+    /* margin-left: 25px; */
 }
 .overlay-twoA{
     height: 600px;
@@ -41,11 +46,12 @@ body{
     justify-content: center;
     align-items: center;
     margin-left: 20px;
-    
+    color: rgb(127, 124, 124);
+    text-shadow: 1px 1px rgba(128, 128, 128, 0.413);
 }
 .overlay-twoA p{
     font-size: 35px;
-    margin-top: 400px;
+    margin-top: 450px;
 }
 .part-twoB p{
     font-size: 35px;
@@ -68,17 +74,19 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    letter-spacing: 0.08em;
 }
 .part-three-grid p{
-    font-size: 22px;
-    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    margin: 20px 0;
     color: rgba(0, 0, 0, 0.836);
 }
 .part-three-grid h4{
+    margin-top: 5px;
     color: rgba(0, 0, 0, 0.836);
-
-    
-    
+    font-family: 'Raleway', serif;
+    font-size: 14px;   
 }
 .part-three.part-three-grid h4:hover{
     color: palevioletred;
@@ -95,43 +103,42 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 50px 70px 0 70px;
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
 }
 /* section four ends here */
 
 
 /* section five starts here */
 .part-five{
-    margin-top: 50px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
 
 }
 .part-five p{
-    font-size: 35px;
-    color: rgba(0, 0, 0, 0.836);
+    font-size: 30px;
+    color: #636766;
     text-align: center;
     margin: 0;
-
-    
-}
-.lineA{
-    width: 12%;
-    background-color: rgba(240, 128, 128, 0.527);
-    height: 2px;
-    
+    letter-spacing: 0.05em;    
 }
 /* section five ends here */
 
 /* section six starts */
 .part-six{
-    padding-top: 100px;
+    padding-top: 20px;
     height: 490px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .part-six-grid{
     height: 400px;
@@ -142,10 +149,9 @@ body{
 }
 .part-six-grid p{
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
     margin: 0;
-
-
+    font-family: 'Lora', serif;
 }
 /* section six ends here */
 

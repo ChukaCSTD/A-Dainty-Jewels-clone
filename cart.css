@@ -1,0 +1,161 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header.scrolled .logo img {
+    filter: invert(1);
+}
+
+header.scrolled nav a {
+    color: #fff;
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    border-bottom: 0.1px solid rgba(128, 128, 128, 0.233);
+}
+
+.nav-one,
+.nav-two,
+.nav-three {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 12px;
+    padding-top: 20px;
+    width: 50px;
+}
+
+.nav-two-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Main container styles */
+.containerA {
+    padding: 100px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.containerB {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Cart item styles */
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.cart-item img.thumbnail {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.counter input {
+    width: 50px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.counter .up, .counter .down {
+    cursor: pointer;
+}
+
+button.remove-from-cart {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.remove-from-cart:hover {
+    background-color: #d55f13;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

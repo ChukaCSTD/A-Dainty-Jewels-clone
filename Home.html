@@ -74,33 +74,35 @@
                     <div class="drop">
                         <button  class="drop-button" id="spin"><img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" /></button>
                         <!-- <button class="cart-button">Cart (<span class="cart-count">0</span>)</button> -->
-                        <div class="drop-dropdown">
-                            <div class="drop-text">
-                                <div class="drop-textA">
-                                    <h4>WEDDING</h4>
-                                    <p>SHOP ALL</p>
-                                </div>
-                                <div class="drop-textB">
-                                    <div class="drop-textB-grid">
-                                        <p>Customer Favorites</p>
-                                        <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
-                                        <p>Tea Length Dresses</p>
-                                        <p>Maxi Length Dresses</p>
-                                        <p>Maternity / Nursing Friendly</p>
-                                        <p>Plus Dresses</p>
+                        <div class="menu_drop">
+                            <div class="drop-dropdown">
+                                <div class="drop-text">
+                                    <div class="drop-textA">
+                                        <h4>WEDDING</h4>
+                                        <p>SHOP ALL</p>
                                     </div>
+                                    <div class="drop-textB">
+                                        <div class="drop-textB-grid">
+                                            <p>Customer Favorites</p>
+                                            <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
+                                            <p>Tea Length Dresses</p>
+                                            <p>Maxi Length Dresses</p>
+                                            <p>Maternity / Nursing Friendly</p>
+                                            <p>Plus Dresses</p>
+                                        </div>
 
-                                    <div class="drop-textB-grid">
-                                        <p>Bride</p>
-                                        <p>Bridesmaids</p>
-                                        <p>Mother of the Bride</p>
-                                        <p>Flower Girl</p>
-                                        <p>Guestbook Attendants</p>
-                                        <p>Bridesmaid Gifts</p>
+                                        <div class="drop-textB-grid">
+                                            <p>Bride</p>
+                                            <p>Bridesmaids</p>
+                                            <p>Mother of the Bride</p>
+                                            <p>Flower Girl</p>
+                                            <p>Guestbook Attendants</p>
+                                            <p>Bridesmaid Gifts</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="drop-image"></div>
                             </div>
-                            <div class="drop-image"></div>
                         </div>
                     </div>
                 </div>
@@ -123,9 +125,13 @@
                     <img style="height: 27px;" src="images/search icon.png"/>
                     <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
                 </div>
-                <div style="display: flex;">
+                <div style="display: flex;" id="dropdown_pro" class="drop">
                     <img style="height: 27px;" src="images/profile icon.png"/>
                     <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
+                    <div class="drop-dropdown" style="width: 100px; height: 100px;">
+                        <a href="Userlog.html" class="drop-item">User Log in/out</a>
+                        <a href="adminlog.html" class="drop-item">Merchant Log in</a>
+                    </div>
                 </div>
                 <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
                 <img style="height: 27px;" src="images/shopping bag.png"/>        
@@ -149,7 +155,7 @@
     <div class="part-two">
         <div class="part-twoA">
             <div class="overlay-twoA">
-                <p>STYLE FOR EVERY LADY</p>
+                <p>A STYLE FOR EVERY LADY</p>
             </div>
         </div>
         <div class="part-twoB">
@@ -164,18 +170,21 @@
     <div class="part-three">
         <div class="part-three-grid">
             <img src="./images/third imageA.jpg"/>
-            <p>Fun,Feminine Dresses for the Season</p>
+            <p>Fun, Feminine Dresses for the Season</p>
             <h4>SHOP DRESSES</h4>
+            <hr style="width: 23%; margin-top: 5px; border: none; height: 1px; background: #dfafa7;">
         </div>
         <div class="part-three-grid">
             <img src="./images/third imageB.jpg"/>
             <p>Sweet Styles for Little Ladies</p>
             <h4>SHOP GIRL'S</h4>
+            <hr style="width: 20%; margin-top: 5px; border: none; height: 1px; background: #dfafa7;">
         </div>
         <div class="part-three-grid">
             <img src="./images/third imageC.jpg"/>
-            <p>Chic,Vacation Ready Styles</p>
+            <p>Chic, Vacation Ready Styles</p>
             <h4>SHOP VACATION DRESSES</h4>
+            <hr style="width: 41%; margin-top: 5px; border: none; height: 1px; background: #dfafa7;">
         </div>
     </div>
 
@@ -191,7 +200,7 @@
     <!-- section five start here -->
     <div class="part-five">
         <p>CUSTOMER FAVORITES</p>
-        <hr class="lineA"/>
+        <hr style="width: 150px; margin-top: 5px; border: none; height: 2.4px; background: #dfafa7;">
     </div>
     <!-- section five ends here -->
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="updateAdminLog.css" >
+    <title>UpdateAdmin-login</title>
+</head>
+<body>
+    <div class="tiny-cont">
+        <p>Home &nbsp; /</p>
+        <a href="#">&nbsp;&nbsp;Login</a>
+    </div>
+
+
+    <div class="big-cont">
+        <h1>UPDATE ADMIN PASSWORD</h1>
+    </div>
+
+    <div class="pink-grid">
+        <div class="pink-card">
+            <form class="log" id="changePass">
+                <h4>OLD PASSWORD:</h4>
+                <input class="inputs" id="oldPassword" placeholder="" type="password" >
+                <p class="error-message" id="err1">please fill out this field</p>
+                <p class="error-message" id="err2">Password must be at least 7 characters</p>
+
+                <h4>NEW PASSWORD:</h4>
+                <input class="inputs" id="newPassword" placeholder="" type="password" >
+                <p class="error-message" id="err3">please fill out this field</p>
+                <p class="error-message" id="err4">Password must be at least 7 characters</p>
+ 
+                <div class="btn2" >
+                    <button type="submit">CHANGE PASSWORD</button>
+                    
+                </div>
+               
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p>Forgot your password?</p>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="card-1">
+            <h2>UPDATE MERCHANT/ADMIN</h2>
+            <h4 style="margin-top: -10px;">Create an account with us and you'll be able to:</h4>
+            <p>. View Users</p>
+            <p>. Add Products</p>
+            <p>. Delete Products</p>
+            <p>. Edit Product Description</p>
+            <p>. Track new orders</p>
+            <a href="updateAdminReg.html">
+                <button>Create Account</button>
+            </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <script src="updateAdminLog.js" ></script>
+</body>
+</html>

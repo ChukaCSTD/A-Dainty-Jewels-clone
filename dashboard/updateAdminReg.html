@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="updateAdminReg.css" >
+    <title>UpdateAdmin-Registration</title>
+</head>
+<body>
+
+    <div class="tiny-cont">
+        <p>Home &nbsp; /</p>
+        <a href="#">&nbsp;&nbsp;Create Account</a>
+    </div>
+
+    <div class="big-cont">
+        <h1>UPDATE MERCHANT/ADMIN REGISTRATION</h1>
+    </div>
+
+    <div class="yellow-grid">
+        <div class="yellow-card">
+           <form id="RegForm">
+               <!-- Input 1 -->
+               <div class="group">
+                  <h4>FIRST NAME</h4>
+                  <p>REQUIRED</p>
+               </div>
+               <input class="inputs" id="fname" placeholder="" type="text" >
+               <p class="error-message" id="error1">first name is required</p>
+               
+               <!-- input 2 -->
+               <div class="group">
+                  <h4>LAST NAME</h4>
+                  <p>REQUIRED</p>
+               </div>
+               <input class="inputs" id="lname" placeholder="" type="text">
+               <p class="error-message" id="error2">last name is required</p>
+
+               <!-- input 3 -->
+               <div class="group">
+                  <h4>EMAIL ADDRESS</h4>
+                  <p>REQUIRED</p>
+               </div>
+               <input class="inputs" id="email2" placeholder="" type="email" >
+                  <p class="error-message" id="error3">email is required</p>
+                  <p class="error-message" id="error4">Invalid Email</p>
+               
+               <!-- input 4 -->
+               <div class="group">
+                  <h4>PHONE NUMBER</h4>
+                  <p>REQUIRED</p>
+               </div>
+               <input class="inputs" id="Phone" placeholder="" type="text">
+               <p class="error-message" id="error5">please fill this field</p>
+
+               <!-- input 5 -->
+               <div class="group">
+                  <h4>STORE NAME</h4>
+                  <p>REQUIRED</p>
+               </div>
+               <input class="inputs" id="Storename" placeholder="" type="text">
+               <p class="error-message" id="error6">Please fill this field</p>
+               
+               <!-- input 6 -->
+               <div class="group">
+                  <h4>DESCRIPTION</h4>
+                  <p>REQUIRED</p>
+               </div>
+               <input class="inputs" id="description" placeholder="" type="text">
+               <p class="error-message" id="error7">Please fill this field</p>
+               
+               
+            </form>
+        </div>
+
+        <div class="yellow-box">
+            <form id="RegForm">
+
+                  <!-- input 7 -->
+                  <div class="group">
+                     <h4>ICON</h4>
+                     <p>REQUIRED</p>
+                  </div>
+                  <input class="inputs" id="Icon" placeholder="" type="file" >
+                  <p class="error-message" id="error8">please fill this field</p>
+         
+                  
+                  <!-- input 8 -->
+                  <div class="group">
+                     <h4>BANNER</h4>
+                     <p>REQUIRED</p>
+                  </div>
+                  <input class="inputs" id="Banner" placeholder="" type="file">
+                  <p class="error-message" id="error9">please fill this field</p>
+
+
+                  <!-- input 9 -->
+                  <div class="group">
+                     <h4>STATE</h4>
+                     <p>REQUIRED</p>
+                  </div>
+                  <input class="inputs" id="State" placeholder="" type="text">
+                  <p class="error-message" id="error10">please fill this field</p>
+            
+                 
+                  <!-- input 10 -->
+                  <div class="group">
+                     <h4>DISTRICT</h4>
+                     <p>REQUIRED</p>
+                  </div>
+                  <input class="inputs" id="District" placeholder="" type="text">
+                  <p class="error-message" id="error11">please fill this field</p>
+
+                  
+                  
+                  <!-- input 11 -->
+                  <div class="group">
+                     <h4>SOCIAL MEDIA</h4>
+                     <p>REQUIRED</p>
+                  </div>
+                  <input class="inputs" id="twitter" placeholder="X" type="text">
+                  <p class="error-message" id="error12">please fill this field</p>
+ 
+                  <input class="inputs" id="facebook" placeholder="Facebook" type="text">
+                  <p class="error-message" id="error13">please fill this field</p>
+ 
+                  <input class="inputs" id="instagram" placeholder="Instagram" type="text">
+                  <p class="error-message" id="error14">please fill this field</p>
+                 
+                 <!-- input 12 -->
+                 <div class="group">
+                   <h4> OTHER PHONE NUMBER</h4>
+                   <p>REQUIRED</p>
+                 </div>
+                 <input class="inputs" id="Phones" placeholder="" type="text">
+                 <p class="error-message" id="error15">please fill this field</p>
+                  
+                 
+             </form>
+        </div>
+
+       
+    </div>
+
+    <div class="divbtn">
+        <form id="RegForm">
+            <button type="submit">UPDATE ACCOUNT</button>
+        </form>
+    </div>
+
+    
+    <script src="updateAdminReg.js"></script>
+</body>
+</html>

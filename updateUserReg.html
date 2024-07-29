@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="updateUserReg.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="containerA">
+        <div style="height: 200px;">
+            Home / <a style="text-decoration: none; color: grey;" href="Create.html">Create Account</a>
+        </div>
+        <h1 style="margin: 0; color: grey;">ALREADY A CUSTOMER? UPDATE ACCOUNT</h1>
+    </div>
+
+    <div class="containerB">
+        <div class="grid">
+            <form id="updateUserRegform">
+                <div>
+                    <label for="name">FIRST NAME <span class="span">REQUIRED</span></label>
+                    <input type="text" id="Updatefirstname" class="input"/>
+                    <p id="Error1" class="error-message"></p>
+                </div>
+                <div>
+                    <label for="name">LAST NAME <span class="span">REQUIRED</span></label>
+                    <input type="text" id="Updatelastname" class="input"/>
+                    <p id="Error2" class="error-message"></p>
+                </div>
+                <div>
+                    <label for="email">EMAIL ADDRESS <span class="span">REQUIRED</span></label>
+                    <input type="email"  id="Updateemail" class="input" />
+                    <p id="Error3"  class="error-message"></p>
+                    
+                </div>
+                
+                <div >
+                    <label for="phone">PHONE NUMBER<span class="span">REQUIRED</span></label>
+                    <input type="text" id="Updatephone" class="input" />
+                    <p id="Error4" class="error-message"></p>
+                </div>
+
+                <div >
+                    <label for="phone">PASSWORD<span class="span">REQUIRED</span></label>
+                    <input type="password" id="Updatepassword" class="input" />
+                    <p id="Error5" class="error-message"></p>
+                </div>
+
+                <!-- <p class="error-message2" id="err10">email already exist</p> -->
+                <button class="BTN-R" id="submit">UPDATE ACCOUNT</button> 
+                <p><a href="updateUserlog.html">Already updated account? Login</a></p>
+                
+
+
+            </form>
+
+            <div class="grid-item">
+                <h1 style="font-weight: 100; color: grey;">ALREADY A CUSTOMER?</h1>
+                <p style="margin: 0; font-size: 18px; color:grey;">update your account with us and you'll be able to:</p>
+                <ul>
+                    <li>Check out faster</li>
+                    <li>Save multiple shipping addresses</li>
+                    <li>Access your order history</li>
+                    <li>Track new orders</li>
+                    <li>Save items to your wish list</li>
+                </ul>
+            </div>
+
+        </div>    
+
+           
+        
+            
+            
+
+        
+    </div>
+
+    <!-- section two starts here -->
+    <div class="part-thirteen">
+        <div class="part-thirteen-A">
+            <h1>CONNECT WITH US</h1>
+            <hr class="lineC"/>
+            <div style="padding-top: 20px; padding-bottom: 25px;">
+                <p style="margin: 0;">Receive exclusive discounts and updates in your</p>
+                <p style="padding-left: 140px; margin: 0; padding-top: 4px;">inbox!</p>
+            </div>
+            <button class="btnC">
+                <div style="display: flex; gap: 20px;">
+                    <img style="width: 25px; height: 25px; padding-top: 10px; padding-left: 10px;" src="./images/email.png"/>
+                    <h3>EMAIL&nbsp;ADDRESS</h3>
+                </div>
+                <h3>SIGN&nbsp;UP</h3>
+            </button>
+        </div>
+
+        <div class="part-thirteen-B">
+            <img style="width: 45px; height: 45px; margin-bottom: 25px;" src="./images/quotation-mark.png">
+            <h3>AND WHO KNOWS BUT THAT</h3>
+            <h3>YOU HAVE COME TO YOUR</h3>
+            <h3>POSITION FOR SUCH A TIME</h3>
+            <h3>AS THIS?</h3>
+            <p>(ESTHER4:14)</p>
+        </div>
+    </div>
+    <!-- section two ends here -->
+
+    <script src="updateUserReg.js"></script>
+</body>
+</html>

@@ -75,34 +75,37 @@
                         <div class="drop">
                             <button  class="drop-button" id="spin"><img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" /></button>
                             <!-- <button class="cart-button">Cart (<span class="cart-count">0</span>)</button> -->
-                            <div class="drop-dropdown">
-                                <div class="drop-text">
-                                    <div class="drop-textA">
-                                        <h4>WEDDING</h4>
-                                        <p>SHOP ALL</p>
-                                    </div>
-                                    <div class="drop-textB">
-                                        <div class="drop-textB-grid">
-                                            <p>Customer Favorites</p>
-                                            <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
-                                            <p>Tea Length Dresses</p>
-                                            <p>Maxi Length Dresses</p>
-                                            <p>Maternity / Nursing Friendly</p>
-                                            <p>Plus Dresses</p>
+                            <div class="menu_drop">
+                                <div class="drop-dropdown">
+                                    <div class="drop-text">
+                                        <div class="drop-textA">
+                                            <h4>WEDDING</h4>
+                                            <p>SHOP ALL</p>
                                         </div>
-
-                                        <div class="drop-textB-grid">
-                                            <p>Bride</p>
-                                            <p>Bridesmaids</p>
-                                            <p>Mother of the Bride</p>
-                                            <p>Flower Girl</p>
-                                            <p>Guestbook Attendants</p>
-                                            <p>Bridesmaid Gifts</p>
+                                        <div class="drop-textB">
+                                            <div class="drop-textB-grid">
+                                                <p>Customer Favorites</p>
+                                                <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
+                                                <p>Tea Length Dresses</p>
+                                                <p>Maxi Length Dresses</p>
+                                                <p>Maternity / Nursing Friendly</p>
+                                                <p>Plus Dresses</p>
+                                            </div>
+    
+                                            <div class="drop-textB-grid">
+                                                <p>Bride</p>
+                                                <p>Bridesmaids</p>
+                                                <p>Mother of the Bride</p>
+                                                <p>Flower Girl</p>
+                                                <p>Guestbook Attendants</p>
+                                                <p>Bridesmaid Gifts</p>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="drop-image"></div>
                                 </div>
-                                <div class="drop-image"></div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="dis-flex">
@@ -124,12 +127,16 @@
                         <img style="height: 27px;" src="images/search icon.png"/>
                         <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
                     </div>
-                    <div style="display: flex;">
+                    <div style="display: flex;" id="dropdown_pro" class="drop">
                         <img style="height: 27px;" src="images/profile icon.png"/>
                         <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
+                        <div class="drop-dropdown-nav" style="width: 100px; height: 90px;">
+                            <a href="Userlog.html" class="drop-item">User Log in/out</a>
+                            <a href="adminlog.html" class="drop-item">Merchant Log in</a>
+                        </div>
                     </div>
                     <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
-                    <img style="height: 27px;" src="images/shopping bag.png"/>        
+                    <a href="cart.html"> <img style="height: 27px;" src="images/shopping bag.png"/></a>
                 </div>
 
             </div>
@@ -209,7 +216,7 @@
                     <p style="padding-left: 5px; align-items: center; justify-content: center; color: gray; font-family: Lora, sans-serif; font-size: 16px;">Worldwide Shipping Available</p>
                 </div>
                 
-                <button class="add-to-cart"><a href="cart.html" style="text-decoration: none; color: black;">Add to Cart</a></button>
+                <button class="add-to-cart" data-product-id="1"><a href="cart.html" style="text-decoration: none; color: black;">Add to Cart</a></button>
 
                 <hr style="margin: 20px 0; border: none; background-color: lightgray; height: .5px;">
 
@@ -298,7 +305,7 @@
             <p></p>
             <hr>
 
-            <p class="stars">
+            <p class="stars" id="stars">
                 <span>
                     <a class="star-1" href="#"></a>
                     <a class="star-2" href="#"></a>

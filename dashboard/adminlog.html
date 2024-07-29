@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="adminlog.css" >
+    <link rel="stylesheet" href="../navigation.css">
+    <link rel="stylesheet" href="../product_style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Admin-login</title>
+</head>
+<body>
+    <nav>
+        <div class="promo">
+            <div class="promo_container">
+                <p style="text-transform: uppercase;">
+                    Everything you need for a beautiful summer! Beautiful 
+                    <a href="https://store.daintyjewells.com/catalog/category/new/summer/">summer dresses</a>
+                    and chic 
+                    <a href="https://store.daintyjewells.com/catalog/category/more/swimleisure/">swimwear.</a>
+                </p>
+            </div>
+            <a href="#"><div class="close"></div></a>
+        </div>
+        <!-- navigation section starts here -->
+        <div class="nav">
+            
+            <div class="nav-one">
+                <div class="nav_one_text dis-flex">
+                    <h4 class="navlinkleft">GIFT&nbsp;CARDS</h4>
+                    <h4 class="navlinkleft">NEED&nbsp;HELP?</h4>
+                </div>
+            </div>
+
+            <div class="nav-two">
+                <img src="../images/dainty jewells logo and text.png" alt="logo"/>
+
+                <div class="nav-two-text">
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SUMMER</h4>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SWIMLEISURE</h4>
+                        <img style="width: 17px; height: 17px;" src="../images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">LAST&nbsp;CHANCE</h4>
+                        <img style="width: 17px; height: 17px; "  src="../images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">DRESSES</h4>
+                        <img style="width: 17px; height: 17px;"  src="../images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">SKIRTS</h4>
+                        <img style="width: 17px; height: 17px;" src="../images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">TOPS</h4>
+                        <img style="width: 17px; height: 17px;" src="../images/down-arrow-lte.png" />
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">KIDS</h4>
+                        <img style="width: 17px; height: 17px;" src="../images/down-arrow-lte.png" />
+                    </div>
+                    <div style="display: flex; padding-top: 5px;" >
+                        <h4 style="margin: 0;" class="drop-button">WEDDING</h4>
+                        <div class="drop">
+                            <button  class="drop-button" id="spin"><img style="width: 17px; height: 17px;" src="../images/down-arrow-lte.png" /></button>
+                            <!-- <button class="cart-button">Cart (<span class="cart-count">0</span>)</button> -->
+                            <div class="menu_drop">
+                                <div class="drop-dropdown">
+                                    <div class="drop-text">
+                                        <div class="drop-textA">
+                                            <h4>WEDDING</h4>
+                                            <p>SHOP ALL</p>
+                                        </div>
+                                        <div class="drop-textB">
+                                            <div class="drop-textB-grid">
+                                                <p>Customer Favorites</p>
+                                                <p><a href="#" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
+                                                <p>Tea Length Dresses</p>
+                                                <p>Maxi Length Dresses</p>
+                                                <p>Maternity / Nursing Friendly</p>
+                                                <p>Plus Dresses</p>
+                                            </div>
+    
+                                            <div class="drop-textB-grid">
+                                                <p>Bride</p>
+                                                <p>Bridesmaids</p>
+                                                <p>Mother of the Bride</p>
+                                                <p>Flower Girl</p>
+                                                <p>Guestbook Attendants</p>
+                                                <p>Bridesmaid Gifts</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-image"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">FOUNDATION</h4>
+                    </div>
+                    <div class="dis-flex">
+                        <h4 style="margin: 0;">MORE</h4>
+                        <img style="width: 17px; height: 17px;" src="../images/down-arrow-lte.png" />
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="nav-three">
+
+                <div class="nav-icons">
+                    <div style="display: flex;">
+                        <img style="height: 27px;" src="../images/search icon.png"/>
+                        <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
+                    </div>
+                    <div style="display: flex;" id="dropdown_pro" class="drop">
+                        <img style="height: 27px;" src="../images/profile icon.png"/>
+                        <img  style="width: 17px; height: 17px; margin-top: 7px;" src="../images/down-arrow.png"/>
+                        <div class="drop-dropdown-nav" style="width: 100px; height: 90px;">
+                            <a href="../Userlog.html" class="drop-item">User Login</a>
+                            <a href="adminlog.html" class="drop-item">Merchant Log in</a>
+                        </div>
+                    </div>
+                    <img style="height: 25px; margin-top: 3px;"  src="../images/heart (1).png"/>
+                    <a href="../cart.html"> <img style="height: 27px;" src="../images/shopping bag.png"/></a>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </nav>
+
+    <!-- navigation section ends here -->
+
+    <!-- <div class="tiny-cont">
+        <p>Home &nbsp;/</p>
+        <a href="#">&nbsp;Login</a>
+    </div> -->
+
+
+    <div class="big-cont" style="margin-top: 10px;">
+        <h1>Login</h1>
+    </div>
+
+    <div class="pink-grid">
+        <div class="pink-card">
+            <form class="log" id="LoginForm">
+                <h4>EMAIL ADDRESS:</h4>
+                <input class="inputs" id="Email" placeholder="" type="email" >
+                <p class="error-message" id="err1">Please fill out this field</p>
+                <p class="error-message" id="err2">Invalid Email</p>
+
+                <h4>PASSWORD:</h4>
+                <input class="inputs" id="Password" placeholder="" type="password" >
+                <p class="error-message" id="err3">Please fill out this field</p>
+                <p class="error-message" id="err4">Password must be at least 7 characters</p>
+ 
+                <div class="btn2" >
+                    <p class="error-message" id="err5">Invalid email or password</p>
+                    <button type="submit">Login</button>
+                    
+                </div>
+               <br>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; line-height: 5px;">
+                    <a href="adminReg.html" style="text-decoration: none; color: #636766" class="access"><p>Don't have an Merchant account? Create Account</p></a><br><br><br><br><br>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="card-1" style="font-family: Cormorant Garamond, serif; padding-top: 10px;">
+            <h2>NEW MERCHANT ?</h2> <br>
+            <h4 style="margin-top: -10px;">Create an account with us and you'll be able to:</h4>
+            <p>. View Users</p>
+            <p>. Add Products</p>
+            <p>. Delete Products</p>
+            <p>. Edit Product Description</p>
+            <p>. Trace new orders</p>
+            <a href="adminReg.html">
+                <button>Create Account</button>
+            </a>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="adminlog.js" ></script>
+</body>
+</html>

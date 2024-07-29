@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tiny-cont{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    width: 90%;
+    font-size: small;
+}
+
+.tiny-cont a {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    font-size: small;
+}
+
+.tiny-cont a:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+.big-cont {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    width: 90%;
+    border-bottom: .5px solid #ddd;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.pink-grid {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 90%;
+    gap: 10px;
+}
+
+.pink-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.inputs{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 550px;
+    border: .4px solid #ddd;
+    border-radius: 2px;
+}
+
+.log h4 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2 button {
+    width: 100px;
+    height: 45px;
+    color: grey;
+    background-color: pink;
+    letter-spacing: 2px;
+    outline: none;
+    font-weight: 600;
+    border: none;
+    transition: .3s ease;
+}
+
+.btn2 button:hover {
+        background-color: rgb(253, 220, 225);
+        cursor: pointer;
+    
+}
+
+.card-1 {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: .5px solid #ddd;
+    /* margin: 0; */
+    width: 90%;
+    padding-left: 10px;
+    
+}
+
+.card-1 p {
+    margin: 4px;
+    
+}
+
+.card-1 button {
+    width: 200px;
+    height: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color: pink;
+    border: none;
+    margin-top: 10px;
+}
+
+.card-1 button:hover {
+    background-color: rgb(253, 220, 225);
+    cursor: pointer;
+}
+
+
+.error-message{
+    color: red;
+    display: none;
+    margin: 0;
+    font-size: 12px;
+    margin-top: -4px;
+    /* position: absolute;
+    bottom: -15px; */
+}

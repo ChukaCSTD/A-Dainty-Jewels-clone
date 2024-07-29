@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="Login.css">
     <link rel="stylesheet" href="product_style.css">
     <link rel="stylesheet" href="navigation.css">
@@ -68,33 +69,35 @@
                     <div class="drop">
                         <button  class="drop-button" id="spin"><img style="width: 17px; height: 17px;" src="images/down-arrow-lte.png" /></button>
                         <!-- <button class="cart-button">Cart (<span class="cart-count">0</span>)</button> -->
-                        <div class="drop-dropdown">
-                            <div class="drop-text">
-                                <div class="drop-textA">
-                                    <h4>WEDDING</h4>
-                                    <p>SHOP ALL</p>
-                                </div>
-                                <div class="drop-textB">
-                                    <div class="drop-textB-grid">
-                                        <p>Customer Favorites</p>
-                                        <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
-                                        <p>Tea Length Dresses</p>
-                                        <p>Maxi Length Dresses</p>
-                                        <p>Maternity / Nursing Friendly</p>
-                                        <p>Plus Dresses</p>
+                        <div class="menu_drop">
+                            <div class="drop-dropdown">
+                                <div class="drop-text">
+                                    <div class="drop-textA">
+                                        <h4>WEDDING</h4>
+                                        <p>SHOP ALL</p>
                                     </div>
+                                    <div class="drop-textB">
+                                        <div class="drop-textB-grid">
+                                            <p>Customer Favorites</p>
+                                            <p><a href="shopping.html" style="text-decoration: none; color: gray;">Knee Length Dresses</a></p>
+                                            <p>Tea Length Dresses</p>
+                                            <p>Maxi Length Dresses</p>
+                                            <p>Maternity / Nursing Friendly</p>
+                                            <p>Plus Dresses</p>
+                                        </div>
 
-                                    <div class="drop-textB-grid">
-                                        <p>Bride</p>
-                                        <p>Bridesmaids</p>
-                                        <p>Mother of the Bride</p>
-                                        <p>Flower Girl</p>
-                                        <p>Guestbook Attendants</p>
-                                        <p>Bridesmaid Gifts</p>
+                                        <div class="drop-textB-grid">
+                                            <p>Bride</p>
+                                            <p>Bridesmaids</p>
+                                            <p>Mother of the Bride</p>
+                                            <p>Flower Girl</p>
+                                            <p>Guestbook Attendants</p>
+                                            <p>Bridesmaid Gifts</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="drop-image"></div>
                             </div>
-                            <div class="drop-image"></div>
                         </div>
                     </div>
                 </div>
@@ -117,9 +120,12 @@
                     <img style="height: 27px;" src="images/search icon.png"/>
                     <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
                 </div>
-                <div style="display: flex;">
+                <div style="display: flex;" id="dropdown_pro" class="drop">
                     <img style="height: 27px;" src="images/profile icon.png"/>
                     <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
+                        <div class="drop-dropdown-nav" style="width: 100px; height: 90px;">                        <a href="Userlog.html" class="drop-item">User Log in/out</a>
+                        <a href="adminlog.html" class="drop-item">Merchant Log in</a>
+                    </div>
                 </div>
                 <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
                 <img style="height: 27px;" src="images/shopping bag.png"/>        
@@ -135,25 +141,16 @@
 
     <div class="containerA">
         <div style="height: 200px;">
-            Home / <a style="text-decoration: none; color: grey;"  href="cart.html">Your Cart</a>
+            Home / <a style="text-decoration: none; color: grey;" href="cart.html">Your Cart</a>
         </div>
-
-        <h1 style=" color: grey; font-size: 30px; font-weight: 100;">YOUR SHOPPING BAG (0 ITEMS)</h1>
-
+        <h1 style="color: grey; font-size: 30px; font-weight: 100;">YOUR SHOPPING BAG (0 ITEMS)</h1>
     </div>
-
     <div class="containerB">
-
-        <div class="grid">
-
-            <form id="Loginform">
-                <div>
-                    <label for="email">YOUR BAG IS EMPTY </label>
-                </div>                            
-            </form>            
+        <div id="cart-items" class="grid">
+            <!-- Cart items will be dynamically inserted here -->
         </div>
-
     </div>
+    <script src="cart.js"></script>
 
     <!-- section two starts here -->
     <div class="part-thirteen">
@@ -288,5 +285,6 @@
 
     <script src="Login.js" ></script>
     <script src="product.js" ></script>
+    <script src="cart.js"></script>
 </body>
 </html>

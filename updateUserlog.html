@@ -4,225 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <style>
-        body{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    /* navigation section starts here */
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        /* gap:10px; */
-        width: 100%;
-        margin: auto ;
-        height: 216px;
-        border-bottom: .1px solid rgba(128, 128, 128, 0.233);
-
-    }
-    .nav-one{
-        background: url("images/leftnavpics.jpg");
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        font-family: "Raleway", sans-serif;
-    }
-    .nav_one_text{
-        position: relative;
-        left: 30px;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: .2em;
-        padding-top: 23px;
-        gap: 27px;
-    }
-    .navlinkleft{
-        color: grey;
-        cursor: pointer;
-    }
-    .navlinkleft:hover{
-        color: #cb7c6f;
-        transition: cubic-bezier(.77,0,.175,1);
-    }
-
-    .nav-two{
-        display: flex;
-        flex-direction: column;
-        margin: 12px 0 0 0;
-        height: 145px;
-        width: 335px;
-    }
-    .nav-two-text{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        gap: 35px;
-        margin-top: 20px;
-        color: grey;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 14px;
-        letter-spacing: .04em;
-        line-height: 1.25;
-    }
-
-    .nav-three{
-        background: url("images/rightnavpics.jpg");
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        width: 210px;
-        height: 215px;
-        font-family: "Raleway", sans-serif;
-        font-size: 12px;
-    }
-    .nav-icons{
-        display: flex;
-        gap: 20px;
-        position: relative;
-        top: 20px;
-        right: 90px;
-        letter-spacing: .2em;
-        /* padding-top: 20px; */
-    }
-
-    .dis-flex{
-        display: flex;
-    }
-
-    .rotated {
-        transform: rotate(180deg);
-        transition: transform 0.3s;
-    }
-
-    .promo{
-        min-height: 40px;
-        padding: 8px 25px;
-        background: #f9e5dd;
-        color: #636766;
-        font-family: "Raleway", sans-serif;
-        font-size: 12px;
-        font-weight: 600;
-        width: 100%;
-        position: relative !important;  
-    }
-
-    .promo_container{
-        letter-spacing: .05em;
-        line-height: 1.765;
-        list-style-position: inside;
-        text-align: center;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 0;
-        letter-spacing: .2em;
-    }
-
-    .promo_container a{
-        color: #636766;
-    }
-
-    .close{
-        background: url("images/close.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 20px;
-        width: 20px;
-        /* position: absolute;
-        right: 20px;
-        top: 10px; */
-        float: right;
-        margin-top: -20px;
-        cursor: pointer;
-    }
-    /* navigation section ends here*/
-
-    /* dropdown stying starts here*/
-    .drop {
-        position: relative;
-        display: inline-block;
-    }
-
-    .drop-button {
-        background: none;
-        border: none;
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    .drop-dropdown {
-        display: none;
-        position: absolute;
-        /* right: -125px; */
-        left: -850px;
-        background-color: white;
-        height: 400px;
-        width: 1100px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        margin-top: 15px;
-        padding: 20px 30px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .drop-image{
-        height: 350px;
-        background-image: url("images/65ea22a753e65.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 250px;
-    }
-    .drop-text{
-        display: flex;
-        flex-direction: column;
-    }
-    .drop-textA{
-        display: flex;
-        gap: 20px;
-    }
-    .drop-textA h4{
-        margin: 0;
-        font-weight: 100;
-        font-size: 28px;
-        color: grey;
-    }
-    .drop-textA p{
-        padding-top: 15px;
-        margin: 0;
-        font-size: 12px;
-        color:rgba(216, 112, 147, 0.829) ;
-    }
-    .drop-textB{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-    }
-    .drop-textB-grid{
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .drop-textB-grid p{
-        padding-top: 10px;
-        margin: 0;
-        font-size: 18px;
-        color: grey;
-    }
-    </style>
+    <link rel="stylesheet" href="product_style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="updateUserlog.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -313,6 +98,7 @@
                                     <div class="drop-image"></div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="dis-flex">
@@ -334,12 +120,16 @@
                         <img style="height: 27px;" src="images/search icon.png"/>
                         <h4 style="margin-top: 7px; color: grey;">SEARCH</h4>
                     </div>
-                    <div style="display: flex;">
+                    <div style="display: flex;" id="dropdown_pro" class="drop">
                         <img style="height: 27px;" src="images/profile icon.png"/>
                         <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
+                        <div class="drop-dropdown-nav" style="width: 100px; height: 90px;">
+                            <a href="Userlog.html" class="drop-item">User Log in/out</a>
+                            <a href="adminlog.html" class="drop-item">Merchant Log in</a>
+                        </div>
                     </div>
                     <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
-                    <img style="height: 27px;" src="images/shopping bag.png"/>        
+                    <a href="cart.html"> <img style="height: 27px;" src="images/shopping bag.png"/></a>
                 </div>
 
             </div>
@@ -350,36 +140,99 @@
 
     <!-- navigation section ends here -->
 
-    <script>
-        $(document).ready(function() {
-        // Change main image on thumbnail click
-        $('.thumbnail').click(function() {
-            var src = $(this).attr('src');
-            $('#main-image').attr('src', src);
-        });
+    <div class="containerA">
+        <div style="height: 200px;">
+            Home / <a style="text-decoration: none; color: grey;"  href="Login.html">Login</a>
+        </div>
 
-        // Change navigation style on scroll
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 50) {
-                $('header').addClass('scrolled');
-            } else {
-                $('header').removeClass('scrolled');
-            }
-        });
+        <h1 style=" color: grey; font-size: 30px; font-weight: 100;">ALREADY A CUSTOMER?CHANGE PASSWORD</h1>
 
-        $('.drop-button').on('click', function() {
-            $('.drop-dropdown').toggle();
-        });
+    </div>
 
-        $('.stars a').on('click', function() {
-            $('.stars span, .stars a').removeClass('active');
+    <div class="containerB">
 
-            $(this).addClass('active');
-            $('.stars span').addClass('active');
-            // alert($(this).text());
-            // $('.myrating').html($(this).text()); 
-        });
-    });
-    </script>
+        <div class="grid">
+
+            <form id="changeUserPasswordform">
+                <div>
+                    <label for="password">OLD PASSWORD <span class="span">REQUIRED</span></label>
+                    <input type="password"  id="Currentpassword" class="input" />
+                    <p id="error1"  class="error-message"></p>
+                </div>
+                <div>
+                    <label for="password">NEW PASSWORD <span class="span">REQUIRED</span></label>
+                    <input type="password"  id="Newpassword" class="input" />
+                    <p id="error2" class="error-message"></p>
+                </div>
+                
+                <!-- <p class="error-message2" id="err15">Invalid email or password</p> -->
+                <button class="BTN-A" id="submit">CHANGE PASSWORD</button>
+                <p><a href="updateUserReg.html">Already have an account?Update Account</a></p>
+            
+            </form>
+
+
+            <div class="grid-item">
+                <h1 style="font-weight: 100; color: grey;">ALREADY A CUSTOMER?</h1>
+                <p style="margin: 0; font-size: 18px; color:grey;">Update your account with us and you'll be able to:</p>
+                <ul>
+                    <li>Check out faster</li>
+                    <li>Save multiple shipping addresses</li>
+                    <li>Access your order history</li>
+                    <li>Track new orders</li>
+                    <li>Save items to your wish list</li>
+                </ul>
+
+
+
+                <a href="updateUserReg.html"    style="padding-top: 50px;">
+                    <button class="BTN-B" type="submit" >UPDATE ACCOUNT</button>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- section two starts here -->
+    <div class="part-thirteen">
+        <div class="part-thirteen-A">
+            <h1>CONNECT  WITH  US</h1>
+            <hr class="lineC"/>
+
+            <div style="padding-top: 20px; padding-bottom: 25px;">
+                <p style="margin: 0;">Receive exclusive discounts and updates in your</p>
+                <p style="padding-left: 140px; margin: 0; padding-top: 4px;">inbox!</p>
+            </div>
+            <button class="btnC">
+                <div style="display: flex; gap: 20px;">
+                    <img style="width: 25px; height: 25px; padding-top: 10px; padding-left: 10px;"    src="./images/email.png"/>
+                    <h3>EMAIL&nbsp;ADDRESS</h3>
+                </div>
+                <h3>SIGN&nbsp;UP</h3>
+            </button>
+
+        </div>
+
+        <div class="part-thirteen-B">
+            <img style="width: 45px; height: 45px; margin-bottom: 25px;"  src="./images/quotation-mark.png">
+            <h3>AND WHO KNOWS BUT THAT</h3>
+            <h3>YOU HAVE COME TO YOUR</h3>
+            <h3>POSITION FOR SUCH A TIME</h3>
+            <h3>AS THIS?</h3>
+
+            <p>(ESTHER4:14)</p>
+
+        </div>
+
+
+    </div>
+    <!-- section two ends here -->
+
+    <script src="updateUserlog.js" ></script>
 </body>
 </html>

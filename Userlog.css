@@ -72,6 +72,13 @@ ul li{
     position: absolute;
     margin-top: -10px;
 }
+.error-message2 {
+    color:#dc3545;
+    font-size: 12px;
+    /* position: absolute; */
+    margin-top: -10px;
+    display: none;
+}
 
 
 /*section two starts here*/
