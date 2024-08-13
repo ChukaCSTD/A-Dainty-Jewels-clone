@@ -15,7 +15,7 @@ $(document).ready(function(){
 
         if (valid){
             $.ajax({
-                url: `${endPoint}/merchants/${merchant_id}/change_passwd`,
+                url: `${endPoint}/merchants/${merchant_id}/change-passwd`,
                 method: "PUT",
                 data: JSON.stringify(formData),
                 contentType: "application/json",

@@ -16,7 +16,7 @@
     <div style="display: flex;">
         <div style="height: 100vh; position: fixed; width: 20%; border-right: .5px solid #DDD;">
             <div style="display: flex; height: 50px; padding: 5px 0; margin-left: 20px; align-items: center;">
-                <div style="height: 40px; width: 40px; background-color: orange; border-radius: 50%;"></div>
+                <div style="height: 40px; width: 40px; border-radius: 50%; background-color: cornflowerblue; background-image: url('images/belief.png');"><img src="images/belief.png" alt="" style="height: 40px;"></div>
                 <h3 style="margin: 0 0 0 10px;"> Hi, Admin</h3>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center;">
@@ -31,6 +31,15 @@
                 <a id="sidebar_viewusers" class="all_users" href="#" style="display: flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; color: black; border-bottom: .5px solid #DDD; font-size: .8rem;">
                     <img style="width: 20px;" src="./images/bar-chart.png" />
                     <h3>View Users</h3>
+                </a>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <a id="sidebar_viewusers" class="all_users" href="adminlog.html" style="display: flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; color: black; border-bottom: .5px solid #DDD; font-size: .8rem;">
+                    <!-- <img style="width: 20px;" src="./images/bar-chart.png" /> -->
+                    <h3>Log Out</h3>
                 </a>
             </div>
         </div>
@@ -51,8 +60,8 @@
             <div class="right-grid">
                 <!-- Product Counter -->
                 <div class="right-grid-itemA" id="product_cr">
-                    <h1 style="font-size: 1rem; margin: 0;">PRODUCTS</h1>
-                    <h1 style="font-size: 3rem; margin: 0;" id="product_number">0</h1>
+                    <h1 style="font-size: 1rem; margin-top: 30px;">PRODUCTS</h1>
+                    <h1 style="font-size: 3rem; margin-top: 0;" id="product_number"></h1>
                 </div>
                 <div class="right-grid-itemB" id="category">
                     <h1 style="font-size: 1rem; margin: 0;">CATEGORY</h1>
@@ -64,12 +73,12 @@
                 </div>
                 <div class="right-grid-itemD" id="liking">
                     <h1 style="font-size: 1rem; margin: 0;">LIKES</h1>
-                    <h1 style="font-size: 3rem; margin: 0;">0</h1>
+                    <h1 style="font-size: 3rem; margin: 0;">15</h1>
                 </div>
 
                 <div class="right-grid-itemA" id="ratings" style="background: orangered !important;">
-                    <h1 style="font-size: 1rem; margin: 0;">RATINGS</h1>
-                    <h1 style="font-size: 3rem; margin: 0; height: 60px;"></h1>
+                    <h1 style="font-size: 1rem; margin-top: 25px;">RATINGS</h1>
+                    <h1 style="font-size: 3rem; margin: 0; height: 25px;"></h1>
                 </div>
             </div>
 
@@ -154,3 +163,6 @@
 
 </body>
 </html>
+
+<!-- <th>ID</th>
+<td>${user.id}</td> -->

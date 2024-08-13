@@ -22,7 +22,8 @@ $(document).ready(function () {
                         $("#err15").show()
                     }else{
                         alert("login successful")
-                        // window.location.href = "home.html"
+                        localStorage.setItem("user", JSON.stringify(res))
+                        window.location.href = "Home.html"
                     }
                 },
                 error: function(err){

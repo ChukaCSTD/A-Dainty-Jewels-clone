@@ -218,3 +218,39 @@ body{
     padding: 0.5em 1em;
     cursor: pointer;
 }
+
+.image-container {
+    position: relative;
+    width: 295px;
+    height: 442px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.image-container .top-text,
+.image-container .bottom-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #121313;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.image-container .top-text {
+    top: 0;
+}
+
+.image-container .bottom-text {
+    bottom: 0;
+    background-color: hsl(19, 73%, 90%);
+}

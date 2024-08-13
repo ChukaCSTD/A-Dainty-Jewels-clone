@@ -6,7 +6,7 @@ $(document).ready(function () {
         e.preventDefault();
 
 
-        let loggeduser = localStorage.getItem("user");
+        let loggeduser = JSON.parse(localStorage.getItem("user"));
         let user_id = loggeduser.id;
 
         
@@ -53,14 +53,15 @@ $(document).ready(function () {
             $.ajax({
                 url: `${endPoint}/users/${user_id}/change-passwd`,
                 method: 'PUT',
-                data: formData,
+                data: JSON.stringify(formData),
+                contentType: "application/json",
                 success: function (res) {
                     if (res) {
                         alert("Password changed successfully");
                         console.log("success", res)
                         localStorage.setItem("user", JSON.stringify(res.data));
-                    }
-                    // window.location.href = "home.html"
+                        window.location.href = "Home.html"
+                    }                    
                 },
                 error: function (err) {
                     console.log("error", err);

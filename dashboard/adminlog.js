@@ -26,7 +26,7 @@ $(document).ready(function(){
                     }else{
                         alert('login successful')
                         localStorage.setItem("merchant",JSON.stringify(res)); 
-                        window.location.href = "dashboard.html";
+                        window.location.href = "index.html";
                     }
                 },
                 error: function(err){

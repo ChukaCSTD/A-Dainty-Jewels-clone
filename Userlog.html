@@ -124,9 +124,11 @@
                     <div style="display: flex;" id="dropdown_pro" class="drop">
                         <img style="height: 27px;" src="images/profile icon.png"/>
                         <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
-                        <div class="drop-dropdown-nav" style="width: 100px; height: 90px;">
+                        <div class="drop-dropdown-nav" style="width: 100px; height: 170px;">
                             <a href="Userlog.html" class="drop-item">User Log in/out</a>
+                            <a href="updateUserReg.html" class="drop-item">Update User details</a>
                             <a href="dashboard/adminlog.html" class="drop-item">Merchant Log in</a>
+                            <a href="dashboard/updateAdminReg.html" class="drop-item">Update Merchant details</a>
                         </div>
                     </div>
                     <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
@@ -161,11 +163,13 @@
                     <input type="text"  id="email" class="input" />
                     <p id="emailError"  class="error-message"></p>
                 </div>
+                <br>
                 <div>
                     <label for="password">PASSWORD <span class="span">REQUIRED</span></label>
                     <input type="password"  id="password" class="input" />
                     <p id="passwordError" class="error-message"></p>
                 </div>
+                <br>
                 
                 <p class="error-message2" id="err15">Invalid email or password</p>
                 <button class="BTN-A" id="submit">LOGIN</button>
@@ -236,6 +240,6 @@
     <!-- section two ends here -->
 
     <script src="Userlog.js" ></script>
-    <script src="product.js"></script>
+    
 </body>
 </html>

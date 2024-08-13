@@ -5,13 +5,13 @@ $(document).ready(function() {
     $("#updateUserRegform").on("submit", function(e) {
         e.preventDefault();
         const user = JSON.parse(localStorage.getItem("user"));
+        const user_id = user.id;
 
         if (!user) {
             alert("User not found. Please login first.");
             return;
         }
 
-        const user_id = user.id;
         const formData = {
             first_name: $("#Updatefirstname").val(),
             last_name: $("#Updatelastname").val(),
@@ -26,14 +26,15 @@ $(document).ready(function() {
                 method: 'PUT',
                 contentType: "application/json",
                 data: JSON.stringify(formData),
-                headers: {
-                    "Authorization": `Bearer ${user.token}`
-                },
+                // headers: {
+                //     "Authorization": `Bearer ${user.token}`
+                // },
                 success: function(res) {
                     console.log("Success", res);
                     if (res) {
                         alert("User updated successfully");
                         localStorage.setItem("user", JSON.stringify(res.data));
+                        window.location.href = "updateUserlog.html"
                     }
                 },
                 error: function(err) {

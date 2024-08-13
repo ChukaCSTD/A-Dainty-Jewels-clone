@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="shopping.css">
     <link rel="stylesheet" href="product_style.css">
     <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="promo">
@@ -131,13 +130,13 @@
                 <div style="display: flex;" id="dropdown_pro" class="drop">
                     <img style="height: 27px;" src="images/profile icon.png"/>
                     <img  style="width: 17px; height: 17px; margin-top: 7px;" src="images/down-arrow.png"/>
-                    <div class="drop-dropdown" style="width: 100px; height: 100px;">
+                    <div class="drop-dropdown-nav" style="width: 100px; height: 90px;">
                         <a href="Userlog.html" class="drop-item">User Log in/out</a>
                         <a href="adminlog.html" class="drop-item">Merchant Log in</a>
                     </div>
                 </div>
-                <img id="likes" style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
-                <img style="height: 27px;" src="images/shopping bag.png"/>        
+                <img style="height: 25px; margin-top: 3px;"  src="images/heart (1).png"/>
+                <a href="cart.html"> <img style="height: 27px;" src="images/shopping bag.png"/></a>
             </div>
 
         </div>
@@ -260,7 +259,7 @@
                     <div class="right-three-grid">
                         <div class="image-container">
                             <a href="product.html"></a><img src="images/Listing_pics_-_2024-05-30T150215.139__20117.jpg" alt=""></a>
-                            <div class="top-text" data-product-id="123"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></div>
+                            <button class="top-text" data-product-id="123"><img src="images/favourite.png" alt="" style="height: 30px; width: 30px; float: right;"></button>
                             <div class="bottom-text">QUICK VIEW</div>
                         </div>
 
@@ -1109,6 +1108,7 @@
         </span>
     </div>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="product.js"></script>
 </body>
 </html>

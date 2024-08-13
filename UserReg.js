@@ -27,7 +27,8 @@ $(document).ready(function () {
                         $("#err10").show()
                     }else{
                         alert("registered successfully")
-                        // window.location.href = "Userlog.html"
+                        localStorage.setItem("user", JSON.stringify(res))
+                        window.location.href = "Userlog.html"
                     }
                 },
                 error: function (err) {

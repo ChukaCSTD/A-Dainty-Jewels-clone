@@ -95,11 +95,11 @@ $(document).ready(function() {
         });
     }
 
-    // Function to append product details to the viewProductsModal
+    // Function to append product details to the viewProductsModal ....<div>${product.images}</div>
     function appendProductToView(product) {
         let productHtml = `
             <div class="product-item">
-           div
+                
                 <h3>${product.title}</h3>
                 <p>${product.descp}</p>
                 <p>Price: ${product.currency} ${product.price}</p>
@@ -165,76 +165,90 @@ $(document).ready(function() {
     updateCategoryCount();
 
     // Function to get user ID
-    function getUserId() {
-        return new Promise((resolve, reject) => {
-            console.log("Fetching user ID...");
-            $.ajax({
-                url: `${apiEndpoint}/user`,
-                type: 'GET',
-                success: function(response) {
-                    console.log("User ID fetched successfully:", response);
-                    if (response && response.id) {
-                        localStorage.setItem('userId', response.id);
-                        resolve(response.id);
-                    } else {
-                        reject('User ID not found');
-                    }
-                },
-                error: function(error) {
-                    console.error("Error fetching user ID:", error);
-                    reject('Error fetching user ID: ' + error);
-                }
-            });
-        });
-    }
+    // function getUserId() {
+    //     return new Promise((resolve, reject) => {
+    //         console.log("Fetching user ID...");
+    //         $.ajax({
+    //             url: `${apiEndpoint}/user`,
+    //             type: 'GET',
+    //             success: function(response) {
+    //                 console.log("User ID fetched successfully:", response);
+    //                 if (response && response.id) {
+    //                     localStorage.setItem('userId', response.id);
+    //                     resolve(response.id);
+    //                 } else {
+    //                     reject('User ID not found');
+    //                 }
+    //             },
+    //             error: function(error) {
+    //                 console.error("Error fetching user ID:", error);
+    //                 reject('Error fetching user ID: ' + error);
+    //             }
+    //         });
+    //     });
+    // }
     
-    getUserId().then(userId => {
-        console.log('Fetched User ID:', userId);
-    }).catch(error => {
-        console.error(error);
-    });
+    // getUserId().then(userId => {
+    //     console.log('Fetched User ID:', userId);
+    // }).catch(error => {
+    //     console.error(error);
+    // });
 
-    function getProductID(callback) {
-        console.log("Fetching product ID...");
-        $.ajax({
-            url: apiEndpoint,
-            type: 'GET',
-            success: function(response) {
-                console.log("Product ID fetched successfully:", response);
-                if (response && response.length > 0) {
-                    const productId = response[0].id; 
-                    callback(productId);
-                } else {
-                    console.error('No products found in the response.');
-                }
-            },
-            error: function(error) {
-                console.error('Error fetching product list:', error);
-            }
-        });
-    }
+    let merchantsDetails = JSON.parse(localStorage.getItem("merchant"))
+    let merchantsID = JSON.parse(localStorage.getItem("merchant"))
+
+    let merchant_id = merchantsID.id
+    let firstName = merchantsDetails.first_name
+    let lastName = merchantsDetails.last_name
+    let storeName = merchantsDetails.store_name
     
-    function updateDashboardLikes(productId) {
-        console.log("Fetching likes for product ID:", productId);
-        $.ajax({
-            url: `${apiEndpoint}/${productId}/liked`,
-            type: 'GET',
-            data: { product_id: productId },
-            success: function(response) {
-                console.log("Likes fetched successfully for product ID:", productId, response);
-                $('#liking').text(`Product ${productId} liked by users: ${response.map(user => user.user_id).join(', ')}`);
-                $('#likes').text(response.length);
-            },
-            error: function(error) {
-                console.error('Error fetching liked users:', error);
-            }
-        });
-    }
+    
+    // let productDetails = JSON.parse(localStorage.setItem("productDetails", products))
+    // let productID = JSON.parse(localStorage.getItem("productDetails"))
+
+    // let product_id = productID.id
+
+    // function getProductID(callback) {
+    //     console.log("Fetching product ID...");
+    //     $.ajax({
+    //         url: `${apiEndpoint}/products?merchant_id=${merchant_id}`,
+    //         type: 'GET',
+    //         success: function(response) {
+    //             console.log("Product ID fetched successfully:", response);
+    //             if (response && response.length > 0) {
+    //                 const productId = response.id; 
+    //                 callback(productId);
+    //             } else {
+    //                 console.error('No products found in the response.');
+    //             }
+    //         },
+    //         error: function(error) {
+    //             console.error('Error fetching product list:', error);
+    //         }
+    //     });
+    // }
+    
+    // function updateDashboardLikes(productId) {
+    //     console.log("Fetching likes for product ID:", productId);
+    //     $.ajax({
+    //         url: `${apiEndpoint}/${productId}/liked`,
+    //         type: 'GET',
+    //         data: { product_id: productId },
+    //         success: function(response) {
+    //             console.log("Likes fetched successfully for product ID:", productId, response);
+    //             $('#liking').text(`Product ${productId} liked by users: ${response.map(user => user.user_id).join(', ')}`);
+    //             $('#likes').text(response.length);
+    //         },
+    //         error: function(error) {
+    //             console.error('Error fetching liked users:', error);
+    //         }
+    //     });
+    // }
     
     // Fetch the product ID and update likes
-    getProductID(function(productId) {
-        updateDashboardLikes(productId);
-    });
+    // getProductID(function(productId) {
+    //     updateDashboardLikes(productId);
+    // });
 
     function updateDashboardRatings(productId) {
         console.log("Fetching ratings for product ID:", productId);
@@ -284,7 +298,7 @@ $(document).ready(function() {
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
@@ -295,7 +309,7 @@ $(document).ready(function() {
         users.forEach(user => {
             userTableHtml += `
                 <tr>
-                    <td>${user.id}</td>
+                    
                     <td>${user.first_name}</td>
                     <td>${user.last_name}</td>
                     <td>${user.email}</td>
